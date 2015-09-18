@@ -42,4 +42,4 @@ Jetzt noch die Arma 3 Server Startparameter anpassen. Dazu folgendes hinzufügen:
 		-mod=@kothServer oder -serverMod=@kothServer
 
 	Linux:
-	  -mod=@kothServer oder -serverMod=@kothServer
+		-mod=@kothServer oder -serverMod=@kothServer
