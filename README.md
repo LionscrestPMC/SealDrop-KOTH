@@ -21,3 +21,4 @@ You can find the installation steps here: [Installation Guide](https://github.co
 ###Special Thanks
 * [Tonic](https://github.com/TAWTonic) for the CfgFetch script.
 * [Torndeco](https://github.com/Torndeco) for extDB2.
+* [Aeroson](https://github.com/aeroson) for the vehicle unflip script.
