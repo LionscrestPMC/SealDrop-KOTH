@@ -4,14 +4,20 @@
   </a>
 </p>
 
-### What is SealDrop KOTH ?
-SealDrop KOTH is a gamemode for Arma 3 where a team of players can fight against each other to earn XP and levels. 
+Welcome and thank you for the interest in SealDrop KOTH. SealDrop KOTH is a gamemode for Arma 3 where a team of players can fight against each other to earn XP and levels. 
 
-### Documentation / Wiki</br>
-https://github.com/TheTotenkopf/SealDrop-KOTH/wiki
+SealDrop KOTH was written by [TheTotenkopf](https://github.com/TheTotenkopf).
 
-### License
+###Documentation / Wiki</br>
+Here you can find all usefull informations about KOTH. [Visit the wiki](https://github.com/TheTotenkopf/SealDrop-KOTH/wiki)
+
+###License
 SealDrop KOTH by TheTotenkopf is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</br>
 https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en_US</br>
 
-SealDrop KOTH was written by [TheTotenkopf](https://github.com/TheTotenkopf).
+###Installation
+You can find the installation steps here: [Installation Guide](https://github.com/TheTotenkopf/SealDrop-KOTH/wiki#installation)
+
+###Special Thanks
+* [Tonic](https://github.com/TAWTonic) for the CfgFetch script.
+* [Torndeco](https://github.com/Torndeco) for extDB2.
