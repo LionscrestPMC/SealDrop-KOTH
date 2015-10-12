@@ -4,7 +4,7 @@
     <img src="http://ftp.sealdrop.de/koth/koth_icon_version.png" alt="Changelog" />
   </a>
     <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en_US">
-    <img src="http://ftp.sealdrop.de/koth/´koth_icon_license.png" alt="License" />
+    <img src="http://ftp.sealdrop.de/koth/koth_icon_license.png" alt="License" />
   </a>
 </p>
 Welcome and thank you for the interest in SealDrop KOTH. SealDrop KOTH is a gamemode for Arma 3 where a team of players can fight against each other to earn XP and levels. 
