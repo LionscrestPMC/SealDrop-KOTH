@@ -1,6 +1,7 @@
 <h1 align="center">SealDrop KOTH</h1>
 <p align="center">
-    <img src="http://ftp.sealdrop.de/koth/koth_version.png" alt="Version" />
+    <a href="http://https://github.com/TheTotenkopf/SealDrop-KOTH/wiki/Changelog">
+    <img src="http://ftp.sealdrop.de/koth/koth_icon_version.png" alt="Version" />
   </a>
 </p>
 
