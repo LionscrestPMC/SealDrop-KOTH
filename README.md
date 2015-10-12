@@ -1,6 +1,5 @@
 <h1 align="center">SealDrop KOTH</h1>
 <p align="center">
-  <a href="http://forums.bistudio.com/showthread.php?149077-Virtual-Ammobox-System-%28VAS%29">
     <img src="http://ftp.sealdrop.de/koth/koth_version.png" width="150" height="120" alt="Version" />
   </a>
 </p>
