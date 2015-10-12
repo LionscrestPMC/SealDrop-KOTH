@@ -1,6 +1,6 @@
 <h1 align="center">SealDrop KOTH</h1>
 <p align="center">
-    <img src="http://ftp.sealdrop.de/koth/koth_version.png" width="150" height="120" alt="Version" />
+    <img src="http://ftp.sealdrop.de/koth/koth_version.png" alt="Version" />
   </a>
 </p>
 
