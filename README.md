@@ -22,3 +22,5 @@ You can find the installation steps here: [Installation Guide](https://github.co
 * [Tonic](https://github.com/TAWTonic) for the CfgFetch script.
 * [Torndeco](https://github.com/Torndeco) for extDB2.
 * [Aeroson](https://github.com/aeroson) for the vehicle unflip script.
+* [KiloSwiss](https://github.com/KiloSwiss) for the NoVoiceInChat script.
+* [infiSTAR](https://github.com/infiSTAR) for the help with the GlobalKillCounter.
