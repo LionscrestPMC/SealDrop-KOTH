@@ -7,7 +7,7 @@
     <img src="http://ftp.sealdrop.de/koth/koth_icon_license.png" alt="License" />
   </a>
 </p>
-Welcome and thank you for the interest in SealDrop KOTH. SealDrop KOTH is a gamemode for Arma 3 where a team of players can fight against each other to earn XP and levels. 
+SealDrop KOTH is the first OpenSource release of the successful KingOfTheHill Mission. SealDrop KOTH is a gamemode for Arma 3 where a team of players can fight against each other to earn XP and levels. 
 
 SealDrop KOTH was written by [DeadP4xel](https://github.com/DeadP4xel).
 
