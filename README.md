@@ -18,6 +18,8 @@ Here you can find all usefull informations about KOTH. [Visit the wiki](https://
 SealDrop KOTH by DeadP4xel is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</br>
 https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en_US</br>
 
+Only files with "Author: DeadP4xel" are created by me and licensed under "CC-BY-NC-ND".
+
 ###Installation
 You can find the installation steps here: [Installation Guide](https://github.com/DeadP4xel/SealDrop-KOTH/wiki#installation)
 
