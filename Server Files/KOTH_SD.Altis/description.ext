@@ -1,0 +1,119 @@
+/*
+  File: Description.ext
+  Author: DeadP4xel
+*/
+author = "DeadP4xel";
+onLoadName = "٠٠•● SEALDROP KOTH ●•٠";
+onLoadMission = "SealDrop KOTH Developed by DeadP4xel";
+loadScreen = "texture\loginScreen.jpg";
+
+wreckManagerMode = 1;
+wreckLimit = 5;
+wreckRemovalMinTime = 120;
+wreckRemovalMaxTime = 240;
+
+corpseManagerMode = 1;
+corpseLimit = 20;
+corpseRemovalMinTime = 180;
+corpseRemovalMaxTime = 360;
+
+respawn = 3;
+respawnDelay = 15;
+respawnOnStart = -1;
+joinUnassigned = 0;
+disabledAI = true;
+allowFunctionsLog = 0;
+disableChannels[]= {2,6};
+enableDebugConsole = 1;
+forceRotorLibSimulation = 0;
+enableItemsDropping = 0;
+respawnDialog = 0;
+debriefing = 0;
+briefing = 0;
+scriptedPlayer = 1;
+
+#include "gui\MasterGUI.h"
+class Header
+{
+	gameType = SC;
+	minPlayers = 1;
+	maxPlayers = 76;
+};
+
+class CfgSounds
+{
+  sounds[] = {};
+  class roundEnd
+  {
+    name = "roundEnd";
+    sound[] = {"\sounds\roundEnd.ogg", 1, 1};
+    titles[] = {};
+  };
+  class intro
+  {
+    name = "intro";
+    sound[] = {"\sounds\introSong.ogg", 1, 1};
+    titles[] = {};
+  };
+};
+
+class RscTitles
+{
+	#include "gui\gui.hpp"
+	#include "gui\introCam.hpp"
+  #include "gui\vehicleAccess.hpp"
+};
+
+class CfgFunctions
+{
+	#include "Functions.h"
+};
+
+class CfgDebriefing
+{
+  class Blacklisted
+  {
+    title = "SEALDROP ANTIHACK";
+    subtitle = "You got blacklisted from the server";
+    description = "You were detected in our blacklist and got banned from the server";
+    pictureBackground = "";
+    picture = "";
+    pictureColor[] = {0,0.3,0.6,1};
+  };
+  class Teamkill
+  {
+    title = "SEALDROP PUNISH";
+    subtitle = "You got banned for teamkilling";
+    description = "You killed to much team members and got banned. You can play again after the next server restart !";
+    pictureBackground = "";
+    picture = "";
+    pictureColor[] = {0,0.3,0.6,1};
+  };
+  class bluforWin
+  {
+    title = "BLUFOR WON";
+    subtitle = "BLUFOR HAS WON KOTH!";
+    description = "BLUFOR WON KOTH!";
+    pictureBackground = "";
+    picture = "";
+    pictureColor[] = {0,0.3,0.6,1};
+  };
+  class opforWin
+  {
+    title = "OPFOR WON";
+    subtitle = "OPFOR HAS WON KOTH!";
+    description = "OPFOR WON KOTH!";
+    pictureBackground = "";
+    picture = "";
+    pictureColor[] = {0,0.3,0.6,1};
+  };
+  class IndepWin
+  {
+    title = "INDEPENDENT WON";
+    subtitle = "INDEPENDENT HAS WON KOTH!";
+    description = "INDEPENDENT WON KOTH!";
+    pictureBackground = "";
+    picture = "";
+    pictureColor[] = {0,0.3,0.6,1};
+  };
+};

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="SD KOTH">
+  <Package name="Global">
+    <Key ID="STR_Global_Close">
+      <Original>Close</Original>
+      <English>Close</English>
+      <German>Schließen</German>
+    </Key>
+    <Key ID="STR_Global_Yes">
+      <Original>Yes</Original>
+      <English>Yes</English>
+      <German>Ja</German>
+    </Key>
+    <Key ID="STR_Global_No">
+      <Original>No</Original>
+      <English>No</English>
+      <German>Nein</German>
+    </Key>
+    <Key ID="STR_Global_Equip">
+      <Original>Equip</Original>
+      <English>Equip</English>
+      <German>Nehmen</German>
+    </Key>
+    <Key ID="STR_Global_Spawn">
+      <Original>Spawn</Original>
+      <English>Spawn</English>
+      <German>Spawn</German>
+    </Key>
+    <Key ID="STR_Global_Cancel">
+      <Original>Cancel</Original>
+      <English>Cancel</English>
+      <German>Abbrechen</German>
+    </Key>
+  </Package>
+  <Package name="Script">
+    <Key ID="STR_Script_SyncCD">
+      <Original>You have to wait 5 minutes to send again data to the server!</Originial>
+      <English>You have to wait 5 minutes to send again data to the server!</English>
+      <German>Du kannst nur jede 5 Minuten deinen Spielstand sichern!</German>
+    </Key>
+    <Key ID="STR_Script_SyncSuccess">
+      <Original>You have successfully send the data to the server\nPlayer: %1</Original>
+      <English>You have successfully send the data to the server\nPlayer: %1</English>
+      <German>Du hast erfolgreich deinen Spielstand gesichert\nSpieler: %1</German>
+    </Key>
+    <Key ID="STR_Script_VolumeMinimum">
+      <Original>You have reached the minimum volume!</Original>
+      <English>You have reached the minimum volume!</English>
+      <German>Du hast das Minimum der Lautstärke erreicht!</German>
+    </Key>
+    <Key ID="STR_Script_AttachmentMSG">
+      <Original>Do you want to add this item to your weapon or inventory? If you add it to your weapon your current existing attachment will be lost!</Original>
+      <English>Do you want to add this item to your weapon or inventory? If you add it to your weapon your current existing attachment will be lost!</English>
+      <German>Möchtest du den Aufsatz zu deiner Waffe oder deinem Inventar hinzufügen? Wenn du es zur Waffe hinzufügst, geht der vorhandene Aufsatz verloren!</German>
+    </Key>
+    <Key ID="STR_Script_Attachment">
+      <Original>Attachment slot taken!</Original>
+      <English>Attachment slot taken!</English>
+      <German>Aufsatz Platz belegt!</German>
+    </Key>
+    <Key ID="STR_Script_Weapon">
+      <Original>Weapon</Original>
+      <English>Weapon</English>
+      <German>Waffe</German>
+      <French>Armes</French>
+      <Italian>Arma</Italian>
+      <Portuguese>Armas</Portuguese>
+    </Key>
+    <Key ID="STR_Script_Inventory">
+      <Original>Inventory</Original>
+      <English>Inventory</English>
+      <German>Inventar</German>
+    </Key>
+    <Key ID="STR_Script_VolumeMaximum">
+      <Original>You have reached the volume limit!</Original>
+      <English>You have reached the volume limit!</English>
+      <German>Du hast das Maximum erreicht!</German>
+    </Key>
+    <Key ID="STR_Script_VolumeHint">
+      <Original>VOLUME SET TO %1 PERCENT</Original>
+      <English>VOLUME SET TO %1 PERCENT</English>
+      <German>LAUTSTÄRKE AUF %1 PROZENT GESETZT</German>
+    </Key>
+    <Key ID="STR_Script_KeyBlock">
+      <Original>KEY BLOCKED BY SERVER!</Original>
+      <English>KEY BLOCKED BY SERVER!</English>
+      <German>TASTE WURDE BLOCKIERT!</German>
+    </Key>
+    <Key ID="STR_Script_escCD">
+      <Original>ABORT IN %1</Original>
+      <English>ABORT IN %1</English>
+      <German>ABBRECHEN IN %1</German>
+    </Key>
+    <Key ID="STR_Script_escMenuTop">
+      <Original>     S E A L D R O P   K O T H</Original>
+      <English>     S E A L D R O P   K O T H</English>
+      <German>     S E A L D R O P   K O T H</German>
+    </Key>
+    <Key ID="STR_Script_escMenuBot">
+      <Original>         by DeadP4xel</Original>
+      <English>         by DeadP4xel</English>
+      <German>         by DeadP4xel</German>
+    </Key>
+    <Key ID="STR_Script_GINFO">
+      <original>GETTING PLAYER INFORMATION FROM PLAYER: %1</Original>
+      <English>GETTING PLAYER INFORMATION FROM PLAYER: %1</English>
+      <German>FRAGE SPIELERINFORMATIONEN VON SPIELR %1 AB</German>
+    </Key>
+    <Key ID="STR_Script_KH">
+      <Original>Player %1 killed himself!</Original>
+      <English>Player %1 killed himself!</English>
+      <German>Spieler %1 hat Selbstmord begangen!</German>
+    </Key>
+    <Key ID="STR_Script_AddPlayer">
+      <Original>ADDING NEW PLAYER TO DATABASE</Original>
+      <English>ADDING NEW PLAYER TO DATABASE</English>
+      <German>FÜGE NEUEN SPIELER ZUR DATENBANK HINZU</German>
+    </Key>
+    <Key ID="STR_Script_Unflip">
+      <Original>Unflip Vehicle</Original>
+      <English>Unflip Vehicle</English>
+      <German>Fahrzeug drehen</German>
+    </Key>
+    <Key ID="STR_Script_ValidateInfo">
+      <Original>VALIDATE STATS FOR PLAYER</Original>
+      <English>VALIDATE STATS FOR PLAYER</English>
+      <German>VALIDIERE SPIELERINFORMATIONEN</German>
+    </Key>
+    <Key ID="STR_Script_SyncError">
+      <Original>SD_SYNC_QUERY:: PLAYER %1 (UID: %2) TRIED TO SYNC DATA AS DEAD PLAYER</Original>
+      <English>SD_SYNC_QUERY:: PLAYER %1 (UID: %2) TRIED TO SYNC DATA AS DEAD PLAYER</English>
+      <German>SD_SYNC_QUERY:: SPIELER %1 (UID: %2) HAT TOD VERSUCHT SICH ZU SYNCHRONISIEREN</German>
+    </Key>
+    <Key ID="STR_Script_Suicide">
+      <Original>Player %1 has committed suicide !</Original>
+      <English>Player %1 has committed suicide !</English>
+      <German>Der Spieler %1 hat Selbstmord begangen !</German>
+    </Key>
+    <Key ID="STR_Script_punishWarning">
+      <Original>STOP TEAMKILLING! WARNING %1 OF %2</Original>
+      <English>STOP TEAMKILLING! WARNING %1 OF %2</English>
+      <German>TEAMKAMERAD GETÖTET! WARNUNG %1 VON %2</German>
+    </Key>
+    <Key ID="STR_Script_punishWarning2">
+      <Original>YOU KILLED TOO MUCH TEAM MATES! KILL %1 OF %2</Original>
+      <English>YOU KILLED TOO MUCH TEAM MATES! KILL %1 OF %2</English>
+      <German>DU HAST ZU VIELE TEAM KAMERADEN GETÖTET! WARNUNG %1 VON %2</German>
+    </Key>
+    <Key ID="STR_Script_rageQuit">
+      <Original>WHY YOU PRESS ALT+F4 ?!?</Original>
+      <English>WHY YOU PRESS ALT+F4 ?!?</English>
+      <German>WIESO DRÜCKST DU ALT+F4 ?!?</German>
+    </Key>
+    <Key ID="STR_Script_vehicleCD">
+      <Original>You have to wait 5 minutes to spawn another vehicle!</Original>
+      <English>You have to wait 5 minutes to spawn another vehicle!</English>
+      <German>Du musst 5 Minuten warten um erneut ein Fahrzeug zu Spawnen!</German>
+    </Key>
+    <Key ID="STR_Script_selectVeh">
+      <Original>Please select something!</Original>
+      <English>Please select something!</English>
+      <German>Du hast nichts ausgewählt!</German>
+    </Key>
+    <Key ID="STR_Script_spawnBlock">
+      <Original>The Spawn Point is blocked!</Original>
+      <English>The Spawn Point is blocked</English>
+      <German>Der Spawnt Punkt ist blockiert!</German>
+    </Key>
+    <Key ID="STR_Script_vehiclesGorund">
+      <Original>Vehicles [GROUND]</Original>
+      <English>Vehicles [GROUND]</English>
+      <German>Fahrzeuge [BODEN]</German>
+    </Key>
+    <Key ID="STR_Script_vehiclesArmed">
+      <Original>Vehicles [ARMED]</Original>
+      <English>Vehicles [ARMED]</English>
+      <German>Fahrzeuge [GEPANZERT]</German>
+    </Key>
+    <Key ID="STR_Script_vehiclesAir">
+      <Original>Vehicles [AIR]</Original>
+      <English>Vehicles [AIR]</English>
+      <German>Fahrzeuge [LUFT]</German>
+    </Key>
+    <Key ID="STR_Script_vehiclesShip">
+      <Original>Vehicles [SHIP]</Original>
+      <English>Vehicles [SHIP]</English>
+      <German>Fahrzeuge [BOOTE]</German>
+    </Key>
+    <Key ID="STR_Script_uniform">
+      <Original>Uniforms</Original>
+      <English>Uniforms</English>
+      <German>Uniformen</German>
+    </Key>
+    <Key ID="STR_Script_headgear">
+      <Original>Headgear</Original>
+      <English>Headgear</English>
+      <German>Helme</German>
+    </Key>
+    <Key ID="STR_Script_goggles">
+      <Original>Goggles</Original>
+      <English>Goggles</English>
+      <German>Brillen</German>
+    </Key>
+    <Key ID="STR_Script_vests">
+      <Original>Vests</Original>
+      <English>Vests</English>
+      <German>Westen</German>
+    </Key>
+    <Key ID="STR_Script_backpack">
+      <Original>Backpacks</Original>
+      <English>Backpacks</English>
+      <German>Rucksäcke</German>
+    </Key>
+    <Key ID="STR_Script_noAccessTitle">
+      <Original>NO ACCESS</Original>
+      <English>NO ACCESS</English>
+      <German>KEIN ZUGRIFF</German>
+    </Key>
+    <Key ID="STR_Script_TextNoAccess">
+      <Original>YOU DONT HAVE ACCESS TO THE INVENTORY</Original>
+      <English>YOU DONT HAVE ACCESS TO THE INVENTORY</English>
+      <German>DU HAST KEIN ZUGANG ZUM FAHRZEUG INVENTAR</German>
+    </Key>
+    <Key ID="STR_Script_respawnText">
+      <Original>RESPAWNING NOW</Original>
+      <English>RESPAWNING NOW</English>
+      <German>WIEDEREINSTIEG</German>
+    </Key>
+    <Key ID="STR_Script_respawnInText">
+      <Original>RESPAWN IN %1</Original>
+      <English>RESPAWN IN %1</English>
+      <German>BEITRITT IN %1</German>
+    </Key>
+    <Key ID="STR_Script_killdByText">
+      <Original>KILLED BY %1</Original>
+      <English>KILLED BY %1</English>
+      <German>GETÖTET VON %1</German>
+    </Key>
+    <Key ID="STR_Script_selfKill">
+      <Original>YOU KILLED YOURSELF</Original>
+      <English>YOU KILLED YOURSELF</English>
+      <German>DU HAST DICH SELBST GETÖTET</German>
+    </Key>
+    <Key ID="STR_Script_weaponsText">
+      <Original>Weapons</Original>
+      <English>Weapons</English>
+      <German>Weapons</German>
+    </Key>
+    <Key ID="STR_Script_magazinesText">
+      <Original>Magazines</Original>
+      <English>Magazines</English>
+      <German>Magazine</German>
+    </Key>
+    <Key ID="STR_Script_rocketsText">
+      <Original>Rockets and Grenades</Original>
+      <English>Rockets and Grenades</English>
+      <German>Raketen und Granaten</German>
+    </Key>
+    <Key ID="STR_Script_scopesText">
+      <Original>Scopes and Attachments</Original>
+      <English>Scopes and Attachments</English>
+      <German>Visiere und Sonstiges</German>
+    </Key>
+  </Package>
+</Project>
