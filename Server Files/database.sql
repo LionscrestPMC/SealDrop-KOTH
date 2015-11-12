@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `banned` int(100) NOT NULL DEFAULT '0',
   `teamkills` int(100) NOT NULL DEFAULT '0',
   `xp` int(255) NOT NULL DEFAULT '0',
-  `deaths` int(255) NOT NULL DEFAULT '0'
+  `deaths` int(255) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `playerid` (`playerid`),
+  UNIQUE KEY `playerid` (`playerid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_bin AUTO_INCREMENT=0 ;
