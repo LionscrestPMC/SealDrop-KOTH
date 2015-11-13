@@ -1,0 +1,9 @@
+// 13.11.2015
+
+- Fixed SpawnTruck Spawns
+- Added Shops to Independet and Opfor
+- Fixed Vehicle Spawns
+
+// 12.11.2015
+
+- Release of KOTH Alpha
