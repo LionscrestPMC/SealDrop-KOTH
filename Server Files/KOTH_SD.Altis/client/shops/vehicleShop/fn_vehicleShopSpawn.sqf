@@ -35,9 +35,9 @@ switch(playerSide) do
 	case independent:
 	{
 		if(_className isKindOf "Air") then {
-			_spawnPoints = "vehicle_spawn_west_air";
+			_spawnPoints = "vehicle_spawn_indep_air";
 		} else {
-			_spawnPoints = "vehicle_spawn_west";
+			_spawnPoints = "vehicle_spawn_indep";
 		};
 		if(_className isKindOf "Ship") then {
 			_spawnPoints = "vehicle_spawn_indep_ship";
@@ -46,9 +46,9 @@ switch(playerSide) do
 	case opfor:
 	{
 		if(_className isKindOf "Air") then {
-			_spawnPoints = "vehicle_spawn_west_air";
+			_spawnPoints = "vehicle_spawn_east_air";
 		} else {
-			_spawnPoints = "vehicle_spawn_west";
+			_spawnPoints = "vehicle_spawn_east";
 		};
 		if(_className isKindOf "Ship") then {
 			_spawnPoints = "vehicle_spawn_east_ship";
