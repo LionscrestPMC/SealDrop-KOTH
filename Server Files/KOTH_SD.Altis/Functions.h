@@ -35,6 +35,7 @@ class SDCLIENT
         class noVoiceChats {};
         class playerStats {};
         class playerJump {};
+        class repairVehicle {};
     };
     class SHOP_CLOTHING
     {
@@ -80,6 +81,7 @@ class SDCLIENT
         class mapPlayerTags {};
         class playerKilled {};
         class autoSave {};
+        class animSync {};
     };
     class GUI
     {

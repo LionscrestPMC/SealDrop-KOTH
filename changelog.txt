@@ -1,9 +1,22 @@
-// 13.11.2015
+===============================================================================
+   + Added feature or noticeable improvement
+   - Bug fix or something removed
+   * Changed or Information
+   ! Important - Take note
+===============================================================================
+
+=== 18.11.2015
+
++ Repair Vehicle Script (SHIFT + L)
++ Added AnimSync Function (sd_fnc_animSync)
+* Changed Buttons File
+
+=== 13.11.2015
 
 - Fixed SpawnTruck Spawns
 - Added Shops to Independet and Opfor
 - Fixed Vehicle Spawns
 
-// 12.11.2015
+=== 12.11.2015
 
 - Release of KOTH Alpha

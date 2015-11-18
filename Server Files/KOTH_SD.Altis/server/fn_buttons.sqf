@@ -60,6 +60,12 @@ switch(_buttons) do
             [] call sd_fnc_playerStats;
         };
     };
+    case 38:
+    {
+        if(_shift) then {
+            [] spawn sd_fnc_repairVehicle;
+        };
+    };
     case 59: // F1
 	{
         if((getPlayerUID player) in sd_admin_players) exitWith {};
