@@ -26,7 +26,6 @@ DELIMITER ;
 
 CREATE TABLE IF NOT EXISTS `players` (
   `id` int(12) NOT NULL AUTO_INCREMENT,
-  `firstjoin` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `playerid` varchar(50) COLLATE latin1_bin NOT NULL,
   `name` varchar(32) COLLATE latin1_bin NOT NULL,
   `side` varchar(15) COLLATE latin1_bin NOT NULL,
