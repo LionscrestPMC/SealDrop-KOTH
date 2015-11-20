@@ -5,6 +5,10 @@
    ! Important - Take note
 ===============================================================================
 
+=== 20.11.2015
+
+* Changed extDB2 66 to version 67
+
 === 18.11.2015
 
 + Repair Vehicle Script (SHIFT + L)
