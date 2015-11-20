@@ -90,23 +90,3 @@ class SDCLIENT
         class hudConfig {};
     };
 };
-
-    class VIEWSYSTEM
-    {
-        tag = "CHVD";
-        class VIEWSYSTEM
-        {
-            file = "gui\viewSystem";
-            class onCheckedChanged {};
-            class onSliderChange {};
-            class onLBSelChanged {};
-            class onEBinput {};
-            class onEBterrainInput {};
-            class selTerrainQuality {};
-            class updateTerrain {};
-            class updateSettings {};
-            class openDialog {};
-            class localize {};
-            class init {postInit = 1;};
-        };
-    };
