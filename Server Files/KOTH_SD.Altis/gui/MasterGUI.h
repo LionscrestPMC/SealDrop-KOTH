@@ -12,3 +12,4 @@
 #include "clothingShop.hpp"
 #include "vehicleShop.hpp"
 #include "deathScreen.hpp"
+#include "loadout.hpp"

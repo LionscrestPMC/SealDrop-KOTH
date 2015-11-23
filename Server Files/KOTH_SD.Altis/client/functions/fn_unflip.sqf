@@ -30,6 +30,7 @@ sd_unflip_canShow = {
 	} forEach _objs;
 	!isNil{sd_unflip_unitargetVehicle}
 };
+/*
 sd_unflip_addAction = {
 	if(!isNil{sd_unflip_handle_addAction}) then {
 		(sd_unflip_handle_addAction select 0) removeAction (sd_unflip_handle_addAction select 1);
@@ -38,3 +39,4 @@ sd_unflip_addAction = {
 };
 [] call sd_unflip_addAction;
 player addEventHandler ["respawn",{[] call sd_unflip_addAction; }];
+*/

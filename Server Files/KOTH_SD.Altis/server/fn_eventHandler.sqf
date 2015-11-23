@@ -7,7 +7,8 @@
 */
 "sd_statsAddTK" addPublicVariableEventHandler 
 {
-	_killer = _this select 1;
+	_packet = _this select 1;
+	_killer = _packet select 0;
 	sd_punish_warnings = sd_punish_warnings + 1; 
 	if(sd_punish_warnings < (call sd_punish_warningsMax)) then {
 		titleText [format [localize "STR_Script_punishWarning",sd_punish_warnings,(call sd_punish_warningsMax)], "WHITE IN"];

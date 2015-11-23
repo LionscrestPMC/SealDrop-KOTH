@@ -31,6 +31,11 @@
       <English>Cancel</English>
       <German>Abbrechen</German>
     </Key>
+    <Key ID="STR_Global_Repair">
+      <Original>Repair Vehicle</Original>
+      <English>Repair Vehicle</English>
+      <German>Repariere Fahrzeug</German>
+    </Key>
   </Package>
   <Package name="Script">
     <Key ID="STR_Script_SyncCD">

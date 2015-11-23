@@ -25,5 +25,6 @@ switch(playerSide) do
         [] call sd_fnc_hudCreate;
     };
 };
+_player call sd_fnc_playerActions;
 _player addRating 999999;
 sd_isDead = false;

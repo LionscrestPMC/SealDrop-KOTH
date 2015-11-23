@@ -60,7 +60,7 @@ diag_log "SD_CLIENT:: LOADING BRIEFING";
 diag_log "SD_CLIENT:: BRIEFING LOADED";
 
 diag_log "SD_CLIENT:: SEARCHING DISPLAY 46 TO LOAD BUTTONS";
-waitUntil {!(isNull (findDisplay 46))};
+waitUntil {!isNull (findDisplay 46)};
 (findDisplay 46) displayAddEventHandler ["KeyDown","_this call sd_fnc_buttons"];
 diag_log "SD_CLIENT:: KEYBOARD BUTTONS LOADED";
 
@@ -119,6 +119,12 @@ if(!isNil "INFISTARVERSION") then {
 // CLIENT IS READY
 waitUntil{!isNil "sd_server_isReady"};
 [] call BASIS_fnc_sendData;
+if(call sd_loadoutMaster) then {
+    [] call LOUT_fnc_loadoutSendRequest;
+    diag_log "SD_CLIENT:: LOADOUT SYSTEM ENABLED";
+} else {
+    diag_log "SD_CLIENT:: LOADOUT SYSTEM DISABLED";
+};
 waitUntil {sd_clientLoad};
 
 diag_log format["SD_CLIENT:: LOADING COMPLETE! TIME ELAPSED %1 SECONDS",(diag_tickTime) - _startTime];

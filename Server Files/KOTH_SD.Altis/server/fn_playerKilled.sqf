@@ -13,7 +13,7 @@ _killer = _this select 1;
 if(call sd_punishSystemMaster) then {
   if(side _killer == side _player) then {
     if(_killer isEqualTo _player) exitWith {};
-    sd_statsAddTK = _killer;
+    sd_statsAddTK = [_killer];
     owner _killer publicVariableClient "sd_statsAddTK";
   };
 };

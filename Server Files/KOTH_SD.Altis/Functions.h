@@ -10,6 +10,26 @@ class BASIS
 	class updateData {};
   };
 };
+
+class LOADOUT
+{
+    tag="LOUT";
+    class LOADOUT
+    {
+        file = "client\loadout";
+        class loadoutGetData {};
+        class loadoutInit {};
+        class loadoutInsertPlayer {};
+        class loadoutSave {};
+        class loadoutWear {};
+        class loadoutSendRequest {};
+        class loadoutUpdate {};
+        class loadoutList {};
+        class loadoutChange {};
+        class loadoutDeleteGear {};
+    };
+};
+
 class SDCLIENT
 {
     tag="sd";
@@ -36,6 +56,7 @@ class SDCLIENT
         class playerStats {};
         class playerJump {};
         class repairVehicle {};
+        class playerActions {};
     };
     class SHOP_CLOTHING
     {
@@ -82,6 +103,7 @@ class SDCLIENT
         class playerKilled {};
         class autoSave {};
         class animSync {};
+        class mArrayToSArray {};
     };
     class GUI
     {

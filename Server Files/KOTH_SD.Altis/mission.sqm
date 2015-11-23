@@ -1181,7 +1181,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=77;
+		items=83;
 		class Item0
 		{
 			position[]={5946.2817,101.55696,12463.014};
@@ -2010,6 +2010,75 @@ class Mission
 			vehicle="Land_PaperBox_open_empty_F";
 			skill=0.60000002;
 			init="this allowDamage false;";
+		};
+		class Item77
+		{
+			position[]={5472.6016,27.299999,14997.254};
+			azimut=180.235;
+			id=162;
+			side="EMPTY";
+			vehicle="Land_CampingTable_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item78
+		{
+			position[]={5472.5386,27.299999,14997.269};
+			azimut=178.252;
+			offsetY=0.80000001;
+			id=163;
+			side="EMPTY";
+			vehicle="Land_Laptop_unfolded_F";
+			leader=1;
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""Loadout"",LOUT_fnc_loadoutInit];";
+		};
+		class Item79
+		{
+			position[]={2719.9214,14.653975,9991.2822};
+			azimut=230.39107;
+			id=164;
+			side="EMPTY";
+			vehicle="Land_CampingTable_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item80
+		{
+			position[]={2719.8921,14.655231,9991.3398};
+			azimut=228.40807;
+			offsetY=0.80000001;
+			id=165;
+			side="EMPTY";
+			vehicle="Land_Laptop_unfolded_F";
+			leader=1;
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""Loadout"",LOUT_fnc_loadoutInit];";
+		};
+		class Item81
+		{
+			position[]={5945.1528,101.6636,12465.18};
+			azimut=227.24461;
+			id=166;
+			side="EMPTY";
+			vehicle="Land_CampingTable_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item82
+		{
+			position[]={5945.123,101.66912,12465.236};
+			azimut=225.26161;
+			offsetY=0.80000001;
+			id=167;
+			side="EMPTY";
+			vehicle="Land_Laptop_unfolded_F";
+			leader=1;
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""Loadout"",LOUT_fnc_loadoutInit];";
 		};
 	};
 	class Markers

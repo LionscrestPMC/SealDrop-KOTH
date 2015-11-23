@@ -5,6 +5,12 @@
    ! Important - Take note
 ===============================================================================
 
+=== 23.11.2015
+
++ Added SealDrop Loadout System
++ New Function "sd_fnc_mArrayToSArray"
+* Bug Fix Player Actions
+
 === 20.11.2015
 
 * Changed extDB2 66 to version 67

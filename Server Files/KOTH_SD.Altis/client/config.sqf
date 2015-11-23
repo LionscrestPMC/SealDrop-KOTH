@@ -64,6 +64,12 @@ __SVAR__(sd_jumpMaster,TRUE);								// ENABLE THE JUMP SCRIPT 										DEFAULT
 __SVAR__(sd_disableVehInv,TRUE); 							// DISABLE THE ACCESS TO THE VEHICLE INVENTORY 					DEFAULT: TRUE
 
 /* ********************************************************************************* */
+/* ******************************* LOADOUT CONFIG ********************************** */
+/* ********************************************************************************* */
+
+__SVAR__(sd_loadoutMaster,TRUE);							// ENABLE THE LOADOUT SYSTEM 									DEFAULT: TRUE
+
+/* ********************************************************************************* */
 /* ****************************** DO NOT TOUCH BELOW ******************************* */
 /* ********************************************************************************* */
 
@@ -73,6 +79,7 @@ sd_clientLoad 			= 	false;
 sd_syncedData 			= 	false;
 sd_vehicleCooldown		= 	false;
 sd_isBanned 			=	true;
+sd_loadoutSyncCooldown 	= 	false;
 sd_kills 				= 	0;
 sd_deaths				= 	0;
 sd_level 				=	0;
@@ -80,4 +87,10 @@ sd_xp 					=	0;
 sd_punishBan 			=	0;
 sd_punish_warnings 		=	0;
 sd_admin_players 		+ ["76561198042737639"];
-comment 'SealDrop KOTH - Version: Alpha 1.0 - Creator: DeadP4xel';
+sd_activeProfile		= -1;
+sd_loadout_1			= [];
+sd_loadout_2			= [];
+sd_loadout_3			= [];
+sd_loadout_4			= [];
+sd_loadout_5			= [];
+comment 'SealDrop KOTH - Version: Alpha 1.1 - Creator: DeadP4xel';

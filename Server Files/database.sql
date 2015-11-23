@@ -38,3 +38,23 @@ CREATE TABLE IF NOT EXISTS `players` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `playerid` (`playerid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_bin AUTO_INCREMENT=0 ;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `loadouts`
+--
+
+CREATE TABLE IF NOT EXISTS `loadouts` (
+  `id` int(12) NOT NULL,
+  `name` varchar(32) NOT NULL,
+  `playerid` varchar(50) NOT NULL,
+  `active` varchar(32) NOT NULL,
+  `loadout_1` text NOT NULL,
+  `loadout_2` text NOT NULL,
+  `loadout_3` text NOT NULL,
+  `loadout_4` text NOT NULL,
+  `loadout_5` text NOT NULL,
+  PRIMARY KEY (`id`), 
+  UNIQUE KEY `playerid` (`playerid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_bin AUTO_INCREMENT=0 ;
