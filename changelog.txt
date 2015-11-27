@@ -5,6 +5,10 @@
    ! Important - Take note
 ===============================================================================
 
+=== 28.11.2015
+
+* Fixed a "date.dll" error in the koth_server
+
 === 23.11.2015
 
 + Added SealDrop Loadout System
