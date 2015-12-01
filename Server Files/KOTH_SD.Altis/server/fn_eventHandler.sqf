@@ -8,22 +8,21 @@
 "sd_statsAddTKClient" addPublicVariableEventHandler 
 {
 	_packet = _this select 1;
-	_killer = _packet select 0;
-	_activate = _packet select 1;
+	_index = _packet select 0;
 
-	if(_activate) then {
+	if(_index) then {
 		sd_punish_warnings = sd_punish_warnings + 1;
 		if(sd_punish_warnings < (call sd_punish_warningsMax)) then {
-			titleText [format [localize "STR_Script_punishWarning",sd_punish_warnings,(call sd_punish_warningsMax)], "WHITE IN"];
+			titleText [format [localize "STR_Script_punishWarning",sd_punish_warnings,(call sd_punish_warningsMax)],"WHITE IN"];
 		} else {
-			titleText [format [localize "STR_Script_punishWarning2",sd_punish_warnings,(call sd_punish_warningsMax)], "WHITE IN"];
+			titleText [format [localize "STR_Script_punishWarning2",sd_punish_warnings,(call sd_punish_warningsMax)],"WHITE IN"];
 		};
 		if(sd_punish_warnings >= (call sd_punish_warningsMax)) then {
-			sd_punishBan = 1; 
-			["Teamkill",false,true] call BIS_fnc_endMission; 
-		};
-		if(alive _killer) then {
-			[] call BASIS_fnc_updateData;
+			sd_punishBan = 1;
+			if(sd_punishBan isEqualTo 1) then {
+				[] call BASIS_fnc_updateData;
+				["Teamkill",false,true] call BIS_fnc_endMission;
+			};
 		};
 	};
 };

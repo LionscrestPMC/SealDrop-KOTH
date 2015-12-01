@@ -100,7 +100,6 @@ class SDCLIENT
         class handleItem {};
         class accType {};
         class mapPlayerTags {};
-        class playerKilled {};
         class autoSave {};
         class animSync {};
         class mArrayToSArray {};

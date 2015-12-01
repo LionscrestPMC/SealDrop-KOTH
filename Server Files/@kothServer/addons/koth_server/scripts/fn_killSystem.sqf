@@ -19,9 +19,8 @@
 "sd_statsAddTKServer" addPublicVariableEventHandler 
 {
 	_packet = _this select 1;
-	_killer = _packet select 0;
 	_owner = owner (_packet select 0);
 
-	sd_statsAddTKClient = [_killer,TRUE];
-	_owner publicVariableClient "sd_statsAddKillClient";
+	sd_statsAddTKClient = [true];
+	_owner publicVariableClient "sd_statsAddTKClient";
 };

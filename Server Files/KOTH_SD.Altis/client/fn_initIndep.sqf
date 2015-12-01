@@ -8,10 +8,10 @@
 private["_player","_handle"];
 _player = player;
 	
-// ERROR CHECKS
-if(sd_punishBan isEqualTo 1 OR sd_punish_warnings >= (call sd_punish_warningsMax)) exitWith {sd_punishBan = 1; ["Teamkill",false,true] call BIS_fnc_endMission};
-waitUntil {!(sd_punish_warnings >= (call sd_punish_warningsMax))};
+// TEAMKILL BAN CHECK
+if((sd_punishBan isEqualTo 1) OR (sd_punish_warnings >= (call sd_punish_warningsMax))) exitWith {["Teamkill",false,true] call BIS_fnc_endMission};
 
+// BLACKLIST CHECK
 _blacklistCheck = [_player] call sd_fnc_blacklistCheck;
 if(_blacklistCheck) exitWith {["Blacklisted",false,true] call BIS_fnc_endMission};
 

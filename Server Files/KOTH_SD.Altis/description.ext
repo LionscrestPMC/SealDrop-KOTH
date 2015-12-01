@@ -8,14 +8,14 @@ onLoadMission = "SealDrop KOTH Developed by DeadP4xel";
 loadScreen = "texture\loginScreen.jpg";
 
 wreckManagerMode = 1;
-wreckLimit = 5;
-wreckRemovalMinTime = 120;
-wreckRemovalMaxTime = 240;
+wreckLimit = 3;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 120;
 
 corpseManagerMode = 1;
-corpseLimit = 20;
-corpseRemovalMinTime = 180;
-corpseRemovalMaxTime = 360;
+corpseLimit = 5;
+corpseRemovalMinTime = 30;
+corpseRemovalMaxTime = 90;
 
 respawn = 3;
 respawnDelay = 15;

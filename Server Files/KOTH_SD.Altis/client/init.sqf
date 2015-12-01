@@ -22,7 +22,6 @@ diag_log "SD_CLIENT:: LOADING PLAYER EVENT HANDLERS";
 player addEventHandler["Killed",{_this call sd_fnc_onPlayerKilled}];
 player addEventHandler["InventoryOpened",{_this call sd_fnc_inventoryLock}];
 player addEventHandler["Respawn",{_this call sd_fnc_onPlayerRespawn}];
-//player addMPEventHandler["MPKilled",{_this call sd_fnc_playerKilled}];
 diag_log "SD_CLIENT:: PLAYER EVENT HANDLERS LOADED";
 
 diag_log "SD_CLIENT:: LOADING PUBLIC VARIABLE EVENT HANDLERS";
@@ -101,13 +100,14 @@ if(call sd_autoSaveMaster) then {
 // CLIENT IS READY
 waitUntil{!isNil "sd_server_isReady"};
 [] call BASIS_fnc_sendData;
+waitUntil {sd_clientLoad};
+
 if(call sd_loadoutMaster) then {
     [] call LOUT_fnc_loadoutSendRequest;
     diag_log "SD_CLIENT:: LOADOUT SYSTEM ENABLED";
 } else {
     diag_log "SD_CLIENT:: LOADOUT SYSTEM DISABLED";
 };
-waitUntil {sd_clientLoad};
 
 diag_log format["SD_CLIENT:: LOADING COMPLETE! TIME ELAPSED %1 SECONDS",(diag_tickTime) - _startTime];
 diag_log "#--------------------------------------------------------------------------------#";

@@ -29,7 +29,7 @@ if(_levelData > sd_level) then {
 		_buttonSpawn ctrlEnable false;
 		_buttonSpawn ctrlSetText "Cooldown";
 	} else {
-		_buttonSpawn ctrlEnable true;
+		_buttonSpawn ctrlEnable false;
 	};
 } else {
 	_vehicleName ctrlSetText format["%1",parseText (_vehicleInfo select 3)];
