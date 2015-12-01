@@ -16,7 +16,8 @@ class Mission
 		"A3_Structures_F_Items_Electronics",
 		"A3_Structures_F_Mil_Shelters",
 		"A3_Structures_F_EPA_Mil_Scrapyard",
-		"A3_Structures_F_Mil_Helipads"
+		"A3_Structures_F_Mil_Helipads",
+		"A3_Structures_F_Civ_Lamps"
 	};
 	addOnsAuto[]=
 	{
@@ -31,6 +32,7 @@ class Mission
 		"A3_Structures_F_Mil_Shelters",
 		"A3_Structures_F_EPA_Mil_Scrapyard",
 		"A3_Structures_F_Mil_Helipads",
+		"A3_Structures_F_Civ_Lamps",
 		"a3_map_altis"
 	};
 	randomSeed=12936538;
@@ -1181,7 +1183,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=83;
+		items=91;
 		class Item0
 		{
 			position[]={5946.2817,101.55696,12463.014};
@@ -2079,6 +2081,78 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this addAction[""Loadout"",LOUT_fnc_loadoutInit];";
+		};
+		class Item83
+		{
+			position[]={5477.2832,27.299999,14998.502};
+			id=168;
+			side="EMPTY";
+			vehicle="Land_LampAirport_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item84
+		{
+			position[]={5440.2065,27.299999,14985.086};
+			id=169;
+			side="EMPTY";
+			vehicle="Land_LampAirport_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item85
+		{
+			position[]={5471.4961,27.299999,14961.05};
+			id=170;
+			side="EMPTY";
+			vehicle="Land_LampAirport_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item86
+		{
+			position[]={5481.6079,27.299999,15035.324};
+			id=171;
+			side="EMPTY";
+			vehicle="Land_LampAirport_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item87
+		{
+			position[]={5515.1235,27.299999,15012.498};
+			id=172;
+			side="EMPTY";
+			vehicle="Land_LampAirport_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item88
+		{
+			position[]={5494.3657,27.299999,14988.292};
+			id=173;
+			side="EMPTY";
+			vehicle="Land_LampAirport_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item89
+		{
+			position[]={5461.2388,27.299999,15013.603};
+			id=174;
+			side="EMPTY";
+			vehicle="Land_LampAirport_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item90
+		{
+			position[]={5454.4102,27.299999,14975.125};
+			id=175;
+			side="EMPTY";
+			vehicle="Land_LampAirport_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 	};
 	class Markers

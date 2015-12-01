@@ -68,11 +68,16 @@ switch(_buttons) do
     };
     case 59: // F1
 	{
-        if((getPlayerUID player) in sd_admin_players) exitWith {};
-        if(sd_admin_useInfiStar) exitWith {};
-        hintSilent localize "STR_Script_KeyBlock";
-    	closeDialog 0;
-    	_handler = false;
+        if((getPlayerUID player) in sd_admin_players) then {
+            if(call sd_admin_useInfiStar) exitWith {};
+            if(_shift) then {
+                [] call sd_fnc_adminTeleport;
+            };
+        } else {
+            hintSilent localize "STR_Script_KeyBlock";
+    	    closeDialog 0;
+    	    _handler = false;
+        };
     };
     case 60: // F2
     {
@@ -105,7 +110,7 @@ switch(_buttons) do
     case 65: // F7 Key
     {
         if((getPlayerUID player) in sd_admin_players) exitWith {};
-        if(sd_admin_useInfiStar) exitWith {};
+        if(call sd_admin_useInfiStar) exitWith {};
         hintSilent localize "STR_Script_KeyBlock";
     	closeDialog 0;
     	_handler = false;
@@ -113,7 +118,7 @@ switch(_buttons) do
     case 66: //F8 key
     {
         if((getPlayerUID player) in sd_admin_players) exitWith {};
-        if(sd_admin_useInfiStar) exitWith {};
+        if(call sd_admin_useInfiStar) exitWith {};
         hintSilent localize "STR_Script_KeyBlock";
     	closeDialog 0;
     	_handler = false;

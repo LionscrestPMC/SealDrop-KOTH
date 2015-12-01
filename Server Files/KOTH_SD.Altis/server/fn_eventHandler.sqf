@@ -25,6 +25,7 @@
 };
 "sd_statsAddKill" addPublicVariableEventHandler 
 {
+	private["_receive","_xpAdd","_killsAdd"];
 	_receive 	= _this select 1;
 	_xpAdd 		= _receive select 0;
 	_killsAdd 	= _receive select 1;
@@ -41,15 +42,18 @@
 	_opfor  = _receive select 1;
 	_indep  = _receive select 2;
 
-	if(_blufor == "TRUE") exitWith {
+	if(_blufor isEqualTo "TRUE") exitWith {
+		[] call BASIS_fnc_updateData;
 		["bluforWin",true,true,false] call BIS_fnc_endMission;
 		playSound "roundEnd";
 	};
-	if(_opfor == "TRUE") exitWith {
+	if(_opfor isEqualTo "TRUE") exitWith {
+		[] call BASIS_fnc_updateData;
 		["opforWin",true,true,false] call BIS_fnc_endMission;
 		playSound "roundEnd";
 	};
-	if(_indep == "TRUE") exitWith {
+	if(_indep isEqualTo "TRUE") exitWith {
+		[] call BASIS_fnc_updateData;
 		["indepWin",true,true,false] call BIS_fnc_endMission;
 		playSound "roundEnd";
 	};

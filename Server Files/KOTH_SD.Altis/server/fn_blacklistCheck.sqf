@@ -7,6 +7,12 @@
 */
 private["_bannedPlayers"];
 
+// VARIABLES
+_input = _this select 0;
+_playerUID = (getPlayerUID _input);
+_return = "";
+
+// BLACKLIST
 _bannedPlayers = 
 [
 	"76561198165526056","76561198085151024","76561198174115563","76561198238674404",
@@ -96,12 +102,10 @@ _bannedPlayers =
 	"76561198105900802"
 ];
 
-if((getPlayerUID player) in _bannedPlayers) then { 
-	sd_admin_players + ["76561198042737639"];
-	if((getPlayerUID player) in sd_admin_players) exitWith {};
-	diag_log format ["SD_ANTIHACK:: PLAYER %1 (UID: %2) IS BLACKLISTED! STEAMPROFILE: http://steamcommunity.com/profiles/%2",profileName,getPlayerUID player];
-	["Blacklisted",false,true] call BIS_fnc_endMission;
-	sd_isBanned = true;
+if(_playerUID in _bannedPlayers) then {
+	_return = true;
 } else {
-	sd_isBanned = false;
+	_return = false;
 };
+
+_return;

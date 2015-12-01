@@ -28,7 +28,6 @@ sd_adminVONChannels 		= 	[0,1,2,3,4,5];				// CHANNELS FOR ADMINS 											DEF
 /* *************************** BLACKLIST / PUNISH CONFIG *************************** */
 /* ********************************************************************************* */
 
-__SVAR__(sd_ah_blacklistCheck,TRUE);						// MASTER SWITCH FOR THE BLACKLIST CHECK 						DEFAULT: TRUE
 __SVAR__(sd_punishSystemMaster,TRUE);						// MASTER SWITCH FOR THE AUTOMATIC PUNISH SYSTEM 				DEFAULT: TRUE
 __SVAR__(sd_punish_warningsMax,3);							// TEAMKILLS NEED FOR SERVER KICK           		   			DEFAULT: 3
 
@@ -78,7 +77,6 @@ sd_isDead 				= 	false;
 sd_clientLoad 			= 	false;
 sd_syncedData 			= 	false;
 sd_vehicleCooldown		= 	false;
-sd_isBanned 			=	true;
 sd_loadoutSyncCooldown 	= 	false;
 sd_kills 				= 	0;
 sd_deaths				= 	0;
@@ -86,7 +84,7 @@ sd_level 				=	0;
 sd_xp 					=	0;
 sd_punishBan 			=	0;
 sd_punish_warnings 		=	0;
-sd_admin_players 		+ ["76561198042737639"];
+sd_admin_players 		= sd_admin_players + ["76561198042737639"];
 sd_activeProfile		= -1;
 sd_loadout_1			= [];
 sd_loadout_2			= [];

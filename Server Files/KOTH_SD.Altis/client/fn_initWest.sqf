@@ -10,7 +10,10 @@ _player = player;
 
 // ERROR CHECKS
 if(sd_punishBan isEqualTo 1 OR sd_punish_warnings >= (call sd_punish_warningsMax)) exitWith {sd_punishBan = 1; ["Teamkill",false,true] call BIS_fnc_endMission};
-waitUntil {!sd_isBanned OR !(sd_punish_warnings >= (call sd_punish_warningsMax))};
+waitUntil {!(sd_punish_warnings >= (call sd_punish_warningsMax))};
+
+_blacklistCheck = [_player] call sd_fnc_blacklistCheck;
+if(_blacklistCheck) exitWith {["Blacklisted",false,true] call BIS_fnc_endMission};
 
 _handle = [] spawn sd_fnc_removeGear;
 waitUntil {scriptDone _handle};

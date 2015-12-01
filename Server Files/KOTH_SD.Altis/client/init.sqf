@@ -25,15 +25,16 @@ player addEventHandler["Respawn",{_this call sd_fnc_onPlayerRespawn}];
 player addMPEventHandler["MPKilled",{_this call sd_fnc_playerKilled}];
 diag_log "SD_CLIENT:: PLAYER EVENT HANDLERS LOADED";
 
+diag_log "SD_CLIENT:: LOADING PUBLIC VARIABLE EVENT HANDLERS";
+_handle = [] spawn sd_fnc_eventHandler;
+waitUntil {scriptDone _handle};
+diag_log "SD_CLIENT:: PUBLIC VARIABLE EVENT HANDLERS LOADED";
+
 diag_log "SD_CLIENT:: SETTING GRID,VIEWDISTANCE AND OBJECTVIEWDISTANCE";
 setTerrainGrid (call sd_terrainGrid);
 setViewDistance (call sd_viewDistance);
 setObjectViewDistance [(call sd_objectViewDistance),(call sd_shadowRendering)];
 diag_log "SD_CLIENT:: GEO DATA SUCCESSFULLY LOADED";
-
-diag_log "SD_CLIENT:: LOADING PUBLIC VARIABLE EVENT HANDLERS";
-[] call sd_fnc_eventHandler;
-diag_log "SD_CLIENT:: PUBLIC VARIABLE EVENT HANDLERS LOADED";
 
 diag_log "SD_CLIENT:: LOADING VEHICLE UNSCRIPT";
 [] spawn sd_fnc_unflip;
@@ -96,16 +97,6 @@ if(call sd_autoSaveMaster) then {
     [] spawn sd_fnc_autoSave;
 } else {
     diag_log "SD_CLIENT:: AUTO SAVE DISABLED";
-};
-
-// BAD PLAYER CHECK
-if(call sd_ah_blacklistCheck) then {
-  if(call sd_admin_useInfiStar) exitWith {diag_log "SD_CLIENT:: BAD PLAYER CHECK DISABLED BECAUSE INFISTAR IS ACTIVATED IN CONFIG"};
-  diag_log "SD_CLIENT:: BAD PLAYER CHECK LOADED";
-  [] spawn sd_fnc_blacklist;
-} else {
-  diag_log "SD_CLIENT:: BAD PLAYER CHECK NOT LOADED";
-  sd_isBanned = false;
 };
 
 // INFISTAR CHECK

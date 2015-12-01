@@ -5,9 +5,17 @@
    ! Important - Take note
 ===============================================================================
 
+== 01.12.2015
+
++ Added a Admin Teleport function (SHIFT+F1)
+* The blacklist check is now a return. "[player] call sd_fnc_blacklistCheck"
+- Fixed a config bug
+- Fixed the kill system
+- removed the variable to enable the blacklistCheck
+
 === 28.11.2015
 
-* Fixed a "date.dll" error in the koth_server
+- Fixed a "date.dll" error in the koth_server
 
 === 23.11.2015
 

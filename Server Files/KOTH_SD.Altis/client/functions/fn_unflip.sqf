@@ -6,7 +6,7 @@
 	Description:
 	Unflip Vehicles
 */
-private["_vehicle","_radius","_newPos","_pos","_unit","_objs"];
+private["_vehicle","_radius","_newPos","_pos","_objs"];
 sd_unflip_unflipVehicle = {
 	_vehicle = _this;
 	if(owner _vehicle != owner player) exitWith {[_vehicle, "sd_unflip_unflipVehicle", _vehicle] call BIS_fnc_MP;};
@@ -20,9 +20,8 @@ sd_unflip_unflipVehicle = {
 	_vehicle allowDamage true;
 };
 sd_unflip_canShow = {
-	_unit = player;
 	_radius = 2;
-	_pos = (getPos _unit) vectorAdd ((eyeDirection _unit) vectorMultiply _radius);
+	_pos = (getPos player) vectorAdd ((eyeDirection player) vectorMultiply _radius);
 	_objs = nearestObjects[_pos, ["Car","Tank"], _radius * 2];
 	sd_unflip_unitargetVehicle = 
 	{
@@ -30,7 +29,6 @@ sd_unflip_canShow = {
 	} forEach _objs;
 	!isNil{sd_unflip_unitargetVehicle}
 };
-/*
 sd_unflip_addAction = {
 	if(!isNil{sd_unflip_handle_addAction}) then {
 		(sd_unflip_handle_addAction select 0) removeAction (sd_unflip_handle_addAction select 1);
@@ -39,4 +37,3 @@ sd_unflip_addAction = {
 };
 [] call sd_unflip_addAction;
 player addEventHandler ["respawn",{[] call sd_unflip_addAction; }];
-*/

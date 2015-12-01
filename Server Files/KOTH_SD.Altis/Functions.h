@@ -91,7 +91,7 @@ class SDCLIENT
         class onPlayerKilled {};
         class buttons {};
         class spawnTruck {};
-        class blacklist {};
+        class blacklistCheck {};
         class inventoryLock {};
         class escMenu {};
         class levelData {};
@@ -110,5 +110,10 @@ class SDCLIENT
         file="gui";
         class hudCreate {};
         class hudConfig {};
+    };
+    class ADMIN
+    {
+        file="client\admin";
+        class adminTeleport {};
     };
 };
