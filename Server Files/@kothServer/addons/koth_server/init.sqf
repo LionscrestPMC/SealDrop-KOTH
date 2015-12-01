@@ -39,6 +39,7 @@ if(_dllFile isEqualTo "") then {
 [] spawn SCRIPTS_fnc_airDrop;
 [] spawn SCRIPTS_fnc_functions;
 [] spawn SCRIPTS_fnc_killCounter;
+[] spawn SCRIPTS_fnc_killSystem;
 
 // DATABASE INIT
 if(isNil {uiNamespace getVariable "sd_sql_id"}) then {

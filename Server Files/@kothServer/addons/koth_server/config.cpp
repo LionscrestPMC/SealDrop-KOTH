@@ -58,6 +58,7 @@ class CfgFunctions
 			class airDrop {};
 			class killCounter {};
 			class functions {};
+			class killSystem {};
 		};
 	};
 
