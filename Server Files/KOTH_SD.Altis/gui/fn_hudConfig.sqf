@@ -78,9 +78,9 @@ if(sd_deaths isEqualTo 0 OR sd_kills isEqualTo 0) then {
 };
 
 // OTHER STUFF
-_countIndep ctrlSetText format["%1",independent countSide list fightzone_counter];
-_countBlue ctrlSetText format["%1",west countSide list fightzone_counter];
-_countOpfor ctrlSetText format["%1",opfor countSide list fightzone_counter];
+_countIndep ctrlSetText format["%1",(playersNumber independent)];
+_countBlue ctrlSetText format["%1",(playersNumber west)];
+_countOpfor ctrlSetText format["%1",(playersNumber opfor)];
 _countKillsWest ctrlSetText format["%1",sd_westCounterToClients];
 _countKillsEast ctrlSetText format["%1",sd_eastCounterToClients];
 _countKillsIndep ctrlSetText format["%1",sd_independentCounterToClients];

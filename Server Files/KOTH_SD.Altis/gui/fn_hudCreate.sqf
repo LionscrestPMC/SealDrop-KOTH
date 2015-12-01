@@ -64,8 +64,8 @@ disableSerialization;
 	private["_countWestTrigger"];
 	while{true} do
 	{
-		_countWestTrigger = west countSide list fightzone_counter;
-		waitUntil {(west countSide list fightzone_counter) != _countWestTrigger};
+		_countWestTrigger = (playersNumber west);
+		waitUntil {(playersNumber west) != _countWestTrigger};
 		[] call sd_fnc_hudConfig; 
 	};
 };
@@ -74,8 +74,8 @@ disableSerialization;
 	private["_countOpforTrigger"];
 	while{true} do
 	{
-		_countOpforTrigger = opfor countSide list fightzone_counter;
-		waitUntil {(opfor countSide list fightzone_counter) != _countOpforTrigger};
+		_countOpforTrigger = (playersNumber opfor);
+		waitUntil {(playersNumber opfor) != _countOpforTrigger};
 		[] call sd_fnc_hudConfig; 
 	};
 };
@@ -84,8 +84,8 @@ disableSerialization;
 	private["_countIndepTrigger"];
 	while{true} do
 	{
-		_countIndepTrigger = independent countSide list fightzone_counter;
-		waitUntil {(independent countSide list fightzone_counter) != _countIndepTrigger};
+		_countIndepTrigger = (playersNumber independent);
+		waitUntil {(playersNumber independent) != _countIndepTrigger};
 		[] call sd_fnc_hudConfig; 
 	};
 };

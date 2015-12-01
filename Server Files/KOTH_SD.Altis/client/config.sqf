@@ -13,7 +13,6 @@
 
 sd_admin_players 			=	["UID1","UID2","UID3"];		// ADMIN PLAYERS HAVE PERMISSION TO ALL CHATS, ADMIN MENU 		DEFAULT: ----
 __SVAR__(sd_admin_menu,FALSE); 								// NOT IMPLEMENTED YET 											DEFAULT: TRUE
-__SVAR__(sd_admin_useInfiStar,FALSE);						// TURN ON WHEN USING INFISTAR 									DEFAULT: FALSE
 
 /* ********************************************************************************* */
 /* ******************************** VOICECHAT CONFIG ******************************* */

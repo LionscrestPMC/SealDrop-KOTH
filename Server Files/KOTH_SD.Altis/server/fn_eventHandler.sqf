@@ -25,18 +25,15 @@
 };
 "sd_statsAddKill" addPublicVariableEventHandler 
 {
-	private["_receive","_xpAdd","_killsAdd"];
 	_receive 	= _this select 1;
 	_xpAdd 		= _receive select 0;
 	_killsAdd 	= _receive select 1;
 
 	sd_kills  = sd_kills + _killsAdd;
 	sd_xp 	  = sd_xp + _xpAdd;
-	[] call BASIS_fnc_updateData;
 };
 "sd_sideWin" addPublicVariableEventHandler
 {
-	private["_receive"];
 	_receive = _this select 1;
 	_blufor = _receive select 0;
 	_opfor  = _receive select 1;

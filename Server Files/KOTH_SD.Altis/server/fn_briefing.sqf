@@ -42,6 +42,7 @@ player createDiaryRecord ["controls",
 			PAGE DOWN: Sound -10%<br/>
 			^: Show personal player stats<br/>
 			SPACE: TO JUMP<br/>
+			SHIFT + L: Repair Vehicle in front of you<br/>
 		"
 	]
 ];

@@ -22,7 +22,7 @@ diag_log "SD_CLIENT:: LOADING PLAYER EVENT HANDLERS";
 player addEventHandler["Killed",{_this call sd_fnc_onPlayerKilled}];
 player addEventHandler["InventoryOpened",{_this call sd_fnc_inventoryLock}];
 player addEventHandler["Respawn",{_this call sd_fnc_onPlayerRespawn}];
-player addMPEventHandler["MPKilled",{_this call sd_fnc_playerKilled}];
+player addMPEventHandler["MPKilled",{_this spawn sd_fnc_playerKilled}];
 diag_log "SD_CLIENT:: PLAYER EVENT HANDLERS LOADED";
 
 diag_log "SD_CLIENT:: LOADING PUBLIC VARIABLE EVENT HANDLERS";
@@ -97,14 +97,6 @@ if(call sd_autoSaveMaster) then {
     [] spawn sd_fnc_autoSave;
 } else {
     diag_log "SD_CLIENT:: AUTO SAVE DISABLED";
-};
-
-// INFISTAR CHECK
-if(!isNil "INFISTARVERSION") then {
-    diag_log format ["SD_CLIENT:: INFISTAR FOUND (VERSION: %1)",INFISTARVERSION];
-    __SVAR__(sd_admin_useInfiStar,TRUE);
-} else {
-    diag_log "SD_CLIENT:: INFISTAR NOT FOUND";
 };
 
 // CLIENT IS READY

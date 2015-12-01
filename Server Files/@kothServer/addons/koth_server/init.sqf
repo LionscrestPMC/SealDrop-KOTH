@@ -14,14 +14,18 @@ sd_tickets = 300; 				// TICKETS BEFORE ROUND END
 publicVariable "sd_tickets";
 diag_log format ["SD_SERVER:: TICKET COUNTER SET TO: %1 TICKETS",sd_tickets];
 
+// INFISTAR CHECK
+if(!isNil "INFISTARVERSION") then {
+    diag_log format ["SD_SERVER:: INFISTAR FOUND (VERSION: %1)",INFISTARVERSION];
+    __SVAR__(sd_admin_useInfiStar,TRUE);
+} else {
+    diag_log "SD_SERVER:: INFISTAR NOT FOUND";
+    __SVAR__(sd_admin_useInfiStar,FALSE);
+};
+
 // VARIABLES
 sd_server_isReady = false;
 publicVariable "sd_server_isReady";
-
-// EXEC SOME SERVER SCRIPTS
-[] spawn SCRIPTS_fnc_airDrop;
-[] spawn SCRIPTS_fnc_functions;
-[] spawn SCRIPTS_fnc_killCounter;
 
 // REAL TIME
 _dllFile = "date" callExtension "";
@@ -30,6 +34,11 @@ if(_dllFile isEqualTo "") then {
 } else {
 	setDate call compile ("date" callExtension "GMT");
 };
+
+// EXEC SOME SERVER SCRIPTS
+[] spawn SCRIPTS_fnc_airDrop;
+[] spawn SCRIPTS_fnc_functions;
+[] spawn SCRIPTS_fnc_killCounter;
 
 // DATABASE INIT
 if(isNil {uiNamespace getVariable "sd_sql_id"}) then {
