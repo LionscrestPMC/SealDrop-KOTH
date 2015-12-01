@@ -5,6 +5,8 @@
   Description:
   PUNISH AND KILL SYSTEM
 */
+
+/*
 // VARIABLES
 _player = _this select 0;
 _killer = _this select 1;
@@ -25,10 +27,7 @@ if(call sd_levelSystemMaster) then {
     if(_killer isKindOf "Man") then {
       sd_statsAddKillServer = [100,1,_killer];
       publicVariableServer "sd_statsAddKillServer";
-    } else {
-      _crew = crew _killer;
-      sd_statsAddKillServer = [100,1,_crew];
-      publicVariableServer "sd_statsAddKillServer";
     };
   };
 };
+*/

@@ -22,7 +22,7 @@ diag_log "SD_CLIENT:: LOADING PLAYER EVENT HANDLERS";
 player addEventHandler["Killed",{_this call sd_fnc_onPlayerKilled}];
 player addEventHandler["InventoryOpened",{_this call sd_fnc_inventoryLock}];
 player addEventHandler["Respawn",{_this call sd_fnc_onPlayerRespawn}];
-player addMPEventHandler["MPKilled",{_this call sd_fnc_playerKilled}];
+//player addMPEventHandler["MPKilled",{_this call sd_fnc_playerKilled}];
 diag_log "SD_CLIENT:: PLAYER EVENT HANDLERS LOADED";
 
 diag_log "SD_CLIENT:: LOADING PUBLIC VARIABLE EVENT HANDLERS";

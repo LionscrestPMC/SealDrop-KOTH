@@ -40,6 +40,7 @@ player enableFatigue (call sd_fatigue);
 // SET POSITION
 _player setPos (getMarkerPos "respawn_independent");
 _player setDir (markerDir "respawn_independent");
+_player setVectorUp (surfaceNormal (getMarkerPos "respawn_independent"));
 _handle = [] spawn sd_fnc_introCamera;
 waitUntil {scriptDone _handle};
 sd_spawned = true;

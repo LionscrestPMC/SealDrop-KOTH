@@ -33,13 +33,32 @@ if(_killer isEqualTo _player) then {
   _killedByText ctrlSetText format [localize "STR_Script_killdByText",name _killer];
 };
 // ADD KILL
-if(_player isKindOf "Man" && !isNull player) then {
+if(_player isKindOf "Man") then {
   sd_deaths = sd_deaths + 1;
+};
+
+// AUTOMATIC PUNISH SYSTEM
+if(call sd_punishSystemMaster) then {
+  if((side _killer) isEqualTo (side _player)) then {
+    if(_killer isEqualTo _player) exitWith {};
+    sd_statsAddTKServer = [_killer];
+    publicVariableServer "sd_statsAddTKServer";
+  };
+};
+
+// ADD KILL TO THE KILLER
+if(call sd_levelSystemMaster) then {
+  if(_killer != _player) then {
+    if((side _killer) isEqualTo (side _player)) exitWith {};
+    if(_killer isKindOf "Man") then {
+      sd_statsAddKillServer = [100,1,_killer];
+      publicVariableServer "sd_statsAddKillServer";
+    };
+  };
 };
 
 // KILLCOUNTER GLOBAL
 _killCounter = (side _killer) call {
-  if(_killer isEqualTo _player) exitWith {systemChat format [localize "STR_Script_Suicide",profileName];};
   if(_this isEqualTo west) exitWith {'sd_westCounterToServer'};
   if(_this isEqualTo opfor) exitWith {'sd_eastCounterToServer'};
   if(_this isEqualTo independent) exitWith {'sd_independentCounterToServer'};
