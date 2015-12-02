@@ -16,6 +16,7 @@ _escMenu =
 		disableSerialization;
 		_buttonAbort = (findDisplay 49) displayCtrl 104;
 		_cooldown = diag_tickTime + (call sd_escapeTime);
+		if((getPlayerUID player) in sd_admin_players) then {_cooldown = diag_tickTime + 1};
 		waitUntil {
 			_buttonAbort ctrlSetText format[localize "STR_Script_EscCD",[(_cooldown - diag_tickTime),"SS.MS"] call BIS_fnc_secondsToString];
 			_buttonAbort ctrlCommit 0;

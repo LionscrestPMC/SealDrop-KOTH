@@ -48,6 +48,7 @@ switch(_buttons) do
         if(isNil "jumpTime") then {jumpTime = 0};
         if(animationState player != "AovrPercMrunSrasWrflDf" && isTouchingGround player && (stance player) isEqualTo "STAND" && (speed player) > 2 && ((diag_tickTime - jumpTime) > 1.5)) then 
         {
+            if(!(call sd_jumpMaster)) exitWith {};
             jumpTime = diag_tickTime;
             [player,true] spawn sd_fnc_playerJump;
             [[player,false],"sd_fnc_playerJump",nil,FALSE] call BIS_fnc_MP;

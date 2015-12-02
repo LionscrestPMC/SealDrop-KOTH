@@ -330,16 +330,16 @@ switch(_controller) do
 			{
 				["VEHICLES GROUN UNARMED",
 					[
-						["B_Quadbike_01_F",nil,10],
-						["O_Quadbike_01_F",nil,10],
-						["I_Quadbike_01_F",nil,10],
-						["C_Offroad_01_F",nil,10],
+						["B_Quadbike_01_F",nil,1],
+						["O_Quadbike_01_F",nil,1],
+						["I_Quadbike_01_F",nil,1],
+						["C_Offroad_01_F",nil,5],
 						["O_MRAP_02_F",nil,10],
-						["I_MRAP_03_F",nil,10],
-						["B_MRAP_01_F",nil,10],
-						["C_Hatchback_01_F",nil,10],
-						["C_SUV_01_F",nil,10],
-						["O_Truck_02_covered_F",nil,10]
+						["I_MRAP_03_F",nil,20],
+						["B_MRAP_01_F",nil,15],
+						["C_Hatchback_01_F",nil,3],
+						["C_SUV_01_F",nil,8],
+						["O_Truck_02_covered_F",nil,2]
 					]
 				];
 			};
@@ -354,18 +354,17 @@ switch(_controller) do
 			{
 				["GROUND VEHICLES",
 					[
-						["B_MBT_01_cannon_F",nil,10],
-						["B_APC_Wheeled_01_cannon_F",nil,10],
-						["B_MBT_01_TUSK_F",nil,10],
-						["I_APC_Wheeled_03_cannon_F",nil,10],
-						["B_MRAP_01_hmg_F",nil,10],
-						["O_MRAP_02_hmg_F",nil,10],
-						["I_MRAP_03_hmg_F",nil,10],
-						["I_MBT_03_cannon_F",nil,10],
-						["I_G_Offroad_01_armed_F",nil,10],
-						["O_MBT_02_cannon_F",nil,10],
-						["O_APC_Tracked_02_cannon_F",nil,10],
-						["B_MBT_01_mlrs_F",nil,10]
+						["B_MBT_01_cannon_F",nil,50],
+						["B_APC_Wheeled_01_cannon_F",nil,35],
+						["B_MBT_01_TUSK_F",nil,50],
+						["I_APC_Wheeled_03_cannon_F",nil,40],
+						["B_MRAP_01_hmg_F",nil,20],
+						["O_MRAP_02_hmg_F",nil,25],
+						["I_MRAP_03_hmg_F",nil,30],
+						["I_MBT_03_cannon_F",nil,45],
+						["I_G_Offroad_01_armed_F",nil,16],
+						["O_MBT_02_cannon_F",nil,33],
+						["O_APC_Tracked_02_cannon_F",nil,44]
 					]
 				];
 			};
@@ -379,16 +378,18 @@ switch(_controller) do
 			{
 				["AIR",
 					[
-						["B_Heli_Transport_01_F",nil,50],
-						["B_Heli_Transport_01_camo_F",nil,10],
-						["B_Heli_Transport_03_F",nil,10],
-						["O_Heli_Attack_02_F",nil,10],
-						["O_Heli_Attack_02_black_F",nil,10],
-						["B_Heli_Attack_01_F",nil,10],
-						["O_Heli_Light_02_F",nil,10],
+						["B_Heli_Transport_01_F",nil,20],
+						["B_Heli_Transport_01_camo_F",nil,28],
+						["B_Heli_Transport_03_F",nil,32],
+						["O_Heli_Attack_02_F",nil,40],
+						["O_Heli_Attack_02_black_F",nil,41],
+						["B_Heli_Attack_01_F",nil,47],
+						["O_Heli_Light_02_F",nil,15],
 						["I_Heli_light_03_F",nil,10],
-						["B_Heli_Light_01_armed_F",nil,10],
-						["O_Heli_Light_02_v2_F",nil,10]
+						["C_Heli_light_01_blue_F",nil,10],
+						["B_Heli_Light_01_armed_F",nil,29],
+						["O_Heli_Light_02_v2_F",nil,13],
+						["O_Heli_Light_02_F",nil,30]
 					]
 				];
 			};
@@ -402,9 +403,9 @@ switch(_controller) do
 			{
 				["BOATS",
 					[
-						["B_Boat_Armed_01_minigun_F",nil,50],
-						["I_Boat_Armed_01_minigun_F",nil,10],
-						["O_Boat_Armed_01_hmg_F",nil,10]
+						["B_Boat_Armed_01_minigun_F",nil,30],
+						["I_Boat_Armed_01_minigun_F",nil,25],
+						["O_Boat_Armed_01_hmg_F",nil,20]
 					]
 				];
 			};

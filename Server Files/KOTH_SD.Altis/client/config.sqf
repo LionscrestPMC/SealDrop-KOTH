@@ -66,6 +66,7 @@ __SVAR__(sd_disableVehInv,TRUE); 							// DISABLE THE ACCESS TO THE VEHICLE INV
 /* ********************************************************************************* */
 
 __SVAR__(sd_loadoutMaster,TRUE);							// ENABLE THE LOADOUT SYSTEM 									DEFAULT: TRUE
+__SVAR__(sd_loadoutCooldown,180);							// SYNC COOLDOWN TIME IN SECONDS 								DEFAULT: 180
 
 /* ********************************************************************************* */
 /* ****************************** DO NOT TOUCH BELOW ******************************* */
@@ -77,6 +78,7 @@ sd_clientLoad 			= 	false;
 sd_syncedData 			= 	false;
 sd_vehicleCooldown		= 	false;
 sd_loadoutSyncCooldown 	= 	false;
+sd_firstSpawn 			= 	false;
 sd_kills 				= 	0;
 sd_deaths				= 	0;
 sd_level 				=	0;

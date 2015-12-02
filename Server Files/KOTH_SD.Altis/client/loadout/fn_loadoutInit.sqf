@@ -18,17 +18,19 @@ _dropdownMenu = ((findDisplay 75000) displayCtrl 75004);
 
 // DROPDOWN MENU 
 lbClear _dropdownMenu;
-_dropdownMenu lbAdd "Loadout Slot 1";
-if(sd_level >= 20) then {
+if(sd_level >= 0) then {
+	_dropdownMenu lbAdd "Loadout Slot 1";
+};
+if(sd_level >= 0) then {
 	_dropdownMenu lbAdd "Loadout Slot 2";
 };
-if(sd_level >= 30) then {
+if(sd_level >= 20) then {
 	_dropdownMenu lbAdd "Loadout Slot 3";
 };
-if(sd_level >= 40) then {
+if(sd_level >= 30) then {
 	_dropdownMenu lbAdd "Loadout Slot 4";
 };
-if(sd_level >= 50) then {
+if(sd_level >= 40) then {
 	_dropdownMenu lbAdd "Loadout Slot 5";
 };
 _dropdownMenu lbSetCurSel 0;

@@ -22,5 +22,5 @@ _packet = [(profileName),getPlayerUID player,(str sd_activeProfile),sd_loadout_1
 sd_loadoutSyncCooldown = true;
 ((findDisplay 75000) displayCtrl 75002) ctrlEnable false;
 ((findDisplay 75000) displayCtrl 75002) ctrlSetText "COOLDOWN";
-uiSleep 180;
+uiSleep (call sd_loadoutCooldown);
 sd_loadoutSyncCooldown = false;

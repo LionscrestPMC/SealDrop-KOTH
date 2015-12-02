@@ -17,7 +17,6 @@ _direction 	= direction _player;
 _animation 	= animationState _player;
 
 // ERROR CHECKS
-if(!(call sd_jumpMaster)) exitWith {};
 if(speed player < 2) exitWith {};
 if(local _player && !_running) exitWith {};
 if(isNull _player OR !alive _player) exitWith {};

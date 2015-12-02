@@ -5,7 +5,18 @@
    ! Important - Take note
 ===============================================================================
 
-== 01.12.2015
+=== 02.12.2015
+
++ Added new Items on Map (changed the flag with the spawntruck action)
++ Added two loadout slots for low level players
++ Sync cooldown for the loadout can now be ajusted in the config file
+* IntroCam only show on first spawn
+* Changed vehicle prices
+* JumpScript error fix
+* Fixed the Punish System
+- Removed the MLRS-Tank
+
+=== 01.12.2015
 
 + Added a Admin Teleport function (SHIFT+F1)
 * The blacklist check is now a return. "[player] call sd_fnc_blacklistCheck"
