@@ -59,6 +59,7 @@ class CfgFunctions
 			class killCounter {};
 			class functions {};
 			class killSystem {};
+			class setTimeGlobal {};
 		};
 	};
 

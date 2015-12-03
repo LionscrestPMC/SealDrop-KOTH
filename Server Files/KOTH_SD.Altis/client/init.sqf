@@ -72,14 +72,6 @@ if(call sd_playerTagsMap) then {
     diag_log "SD_CLIENT:: MAP PLAYER TAGS DISABLED";
 };
 
-// REAL TIME SCRIPT (GMT)
-if(call sd_realTime) then {
-    diag_log "SD_CLIENT:: REAL TIME (GMT) ENABLED";
-    setDate call compile ("date" callExtension "GMT");
-} else {
-    diag_log "SD_CLIENT:: REAL TIME (GMT) DISABLED";
-};
-
 // FATIGUE SYSTEM
 if(call sd_fatigue) then {
     player enableFatigue true;
@@ -104,6 +96,7 @@ waitUntil {sd_clientLoad};
 
 if(call sd_loadoutMaster) then {
     [] call LOUT_fnc_loadoutSendRequest;
+    waitUntil {sd_loadoutLoad};
     diag_log "SD_CLIENT:: LOADOUT SYSTEM ENABLED";
 } else {
     diag_log "SD_CLIENT:: LOADOUT SYSTEM DISABLED";

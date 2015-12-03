@@ -79,6 +79,7 @@ sd_syncedData 			= 	false;
 sd_vehicleCooldown		= 	false;
 sd_loadoutSyncCooldown 	= 	false;
 sd_firstSpawn 			= 	false;
+sd_loadoutLoad 			=	false;
 sd_kills 				= 	0;
 sd_deaths				= 	0;
 sd_level 				=	0;

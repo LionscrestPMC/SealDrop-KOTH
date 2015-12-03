@@ -5,6 +5,19 @@
    ! Important - Take note
 ===============================================================================
 
+=== 03.12.2015
+
++ Added extDB2 68
++ Added server config.sqf
++ Added a complete new global time system! Check the server config.sqf file
++ Added a player to the blacklist
++ Added actual "server.cfg"
+* Changed RealTime to extDB query
+* Bugfix Vehicle shop
+- Vehicle Repair bug fix
+- Removed "date.dll"
+- Removed extDB2 67
+
 === 02.12.2015
 
 + Added new Items on Map (changed the flag with the spawntruck action)

@@ -12,7 +12,6 @@ _vehicle = cursorTarget;
 
 // ERROR CHECKS 
 if((damage _vehicle) >= 1) exitWith {hintSilent "This vehicle is destroyed! You can't repair it anymore"};
-if((damage _vehicle) isEqualTo 0) exitWith {hintSilent "This vehicle is fully repaired!"};
 if(isNull _vehicle) exitWith {};
 if(!alive player OR isNull player) exitWith {};
 if(vehicle player != player) exitWith {hintSilent "You can't repair a vehicle while stay in a vehicle."};

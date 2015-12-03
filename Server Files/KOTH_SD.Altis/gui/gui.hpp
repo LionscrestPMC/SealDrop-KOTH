@@ -22,7 +22,7 @@ class playerGUI
 			y = 0.88 * safezoneH + safezoneY;
 			w = 0.05 * safezoneW;
 			h = 0.08 * safezoneH;
-			colorBackground[] = {0.004,0.275,0.537,1};
+			colorBackground[] = {0,0.3,0.6,1};
 		};
 		class MainBackgroundOpfor: sd_RscText
 		{
@@ -31,7 +31,7 @@ class playerGUI
 			y = 0.88 * safezoneH + safezoneY;
 			w = 0.05 * safezoneW;
 			h = 0.08 * safezoneH;
-			colorBackground[] = {0.455,0,0.004,1};
+			colorBackground[] = {0.5,0,0,1};
 		};
 		class MainBackgroundIndependent: sd_RscText
 		{
@@ -40,7 +40,7 @@ class playerGUI
 			y = 0.88 * safezoneH + safezoneY;
 			w = 0.0499999 * safezoneW;
 			h = 0.0800003 * safezoneH;
-			colorBackground[] = {0,0.443,0,1};
+			colorBackground[] = {0,0.5,0,1};
 		};
 		class BackgroundTeamBlufor: sd_RscText
 		{

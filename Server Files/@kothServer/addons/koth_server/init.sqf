@@ -7,15 +7,13 @@
 	Description:
 	Main server init file.
 */
-private["_version","_dllFile"];
+private["_version","_dllFile","_dllFile","_timeRaw","_timeArray","_timeFinal"];
 
-// CONFIG
-sd_tickets = 300; 				// TICKETS BEFORE ROUND END
-publicVariable "sd_tickets";
-diag_log format ["SD_SERVER:: TICKET COUNTER SET TO: %1 TICKETS",sd_tickets];
+[] call compile preProcessFileLineNumbers "\koth_server\config.sqf";
 
 // INFISTAR CHECK
 if(!isNil "INFISTARVERSION") then {
+	if(call sd_disableInfiCheck) exitWith {__SVAR__(sd_admin_useInfiStar,FALSE)};
     diag_log format ["SD_SERVER:: INFISTAR FOUND (VERSION: %1)",INFISTARVERSION];
     __SVAR__(sd_admin_useInfiStar,TRUE);
 } else {
@@ -23,23 +21,17 @@ if(!isNil "INFISTARVERSION") then {
     __SVAR__(sd_admin_useInfiStar,FALSE);
 };
 
-// VARIABLES
+diag_log format ["SD_SERVER:: TICKET COUNTER SET TO: %1 TICKETS",sd_tickets];
+
 sd_server_isReady = false;
 publicVariable "sd_server_isReady";
-
-// REAL TIME
-_dllFile = "date" callExtension "";
-if(_dllFile isEqualTo "") then {
-	diag_log "DATE:: FILE DATE.DLL NOT FOUND!";
-} else {
-	setDate call compile ("date" callExtension "GMT");
-};
 
 // EXEC SOME SERVER SCRIPTS
 [] spawn SCRIPTS_fnc_airDrop;
 [] spawn SCRIPTS_fnc_functions;
 [] spawn SCRIPTS_fnc_killCounter;
 [] spawn SCRIPTS_fnc_killSystem;
+[] call SCRIPTS_fnc_setTimeGlobal;
 
 // DATABASE INIT
 if(isNil {uiNamespace getVariable "sd_sql_id"}) then {
