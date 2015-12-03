@@ -2313,16 +2313,16 @@ class Mission
 		class Item9
 		{
 			position[]={5943.8599,101.6629,12463.129};
-			name="respawn_independent";
+			name="respawn_guerrila";
 			type="Empty";
-			angle=17.241982;
+			angle=17.242001;
 		};
 		class Item10
 		{
 			position[]={2718.4194,14.474657,9987.5596};
-			name="respawn_opfor";
+			name="respawn_east";
 			type="Empty";
-			angle=41.130871;
+			angle=41.130901;
 		};
 		class Item11
 		{

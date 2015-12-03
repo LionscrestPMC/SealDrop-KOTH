@@ -38,9 +38,11 @@ _player linkItem "NVGoggles_INDEP";
 player enableFatigue (call sd_fatigue);
 	
 // SET POSITION
-_player setPos (getMarkerPos "respawn_independent");
-_player setDir (markerDir "respawn_independent");
-_player setVectorUp (surfaceNormal (getMarkerPos "respawn_independent"));
+if(!sd_firstSpawn) then {
+	_player setPos (getMarkerPos "respawn_guerrila");
+	_player setDir (markerDir "respawn_guerrila");
+	_player setVectorUp (surfaceNormal (getMarkerPos "respawn_guerrila"));
+};
 _handle = [] spawn sd_fnc_introCamera;
 waitUntil {scriptDone _handle};
 sd_spawned = true;

@@ -38,8 +38,10 @@ _player linkItem "NVGoggles";
 player enableFatigue (call sd_fatigue);
 
 // SET POSITION
-_player setPos (getMarkerPos "respawn_opfor");
-_player setDir (markerDir "respawn_opfor");
+if(!sd_firstSpawn) then {
+	_player setPos (getMarkerPos "respawn_east");
+	_player setDir (markerDir "respawn_east");
+};
 _handle = [] spawn sd_fnc_introCamera;
 waitUntil {scriptDone _handle};
 sd_spawned = true;

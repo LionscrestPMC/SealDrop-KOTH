@@ -69,8 +69,6 @@ if(isNil {uiNamespace getVariable "sd_sql_id"}) then {
 		uiNamespace setVariable ["MISC_ID",MISC_ID];
 		"extDB2" callExtension format["9:ADD_PROTOCOL:MISC:%1",(call MISC_ID)];
 		diag_log "EXTDB:: MISC IS ENABLED";
-		_serverTime = "extDB2" callExtension format["0:%1:TIME:1",(call MISC_ID)];
-		diag_log format ["EXTDB:: GLOBAL TIME (GMT+1): %1",_serverTime];
 	};
 	// START RCON API FOR EXTDB
 	if(getNumber(configFile >> "CfgServerSettings" >> "DATABASE" >> "RCON") isEqualTo 1) then {

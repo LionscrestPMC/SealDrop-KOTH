@@ -17,7 +17,7 @@ corpseLimit = 5;
 corpseRemovalMinTime = 30;
 corpseRemovalMaxTime = 90;
 
-respawn = 3;
+respawn = "BASE";
 respawnDelay = 15;
 respawnOnStart = -1;
 joinUnassigned = 0;

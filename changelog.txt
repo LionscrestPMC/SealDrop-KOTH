@@ -5,6 +5,14 @@
    ! Important - Take note
 ===============================================================================
 
+=== 03.12.2015 - Patch 8
+
++ Added extDB67
+- Removed extDB68
++ Added date.dll
+* Changed date and extDB date,time support
+* Fixed spawns
+
 === 03.12.2015
 
 + Added extDB2 68

@@ -37,8 +37,10 @@ _player linkItem "ItemGPS";
 _player linkItem "NVGoggles";
 
 // SET POSITION
-_player setPos (getMarkerPos "respawn_west");
-_player setDir (markerDir "respawn_west");
+if(!sd_firstSpawn) then {
+	_player setPos (getMarkerPos "respawn_west");
+	_player setDir (markerDir "respawn_west");
+};
 _handle = [] spawn sd_fnc_introCamera;
 waitUntil {scriptDone _handle};
 sd_spawned = true;
