@@ -9,7 +9,6 @@ private ["_camera","_hndl","_range","_handle"];
 _range = 1400;
 
 // FIRST SPAWN CHECK
-if(sd_firstSpawn) exitWith {};
 waitUntil {!isNull player && alive player};
 playSound ["intro",true];
 _handle =
@@ -58,4 +57,3 @@ waitUntil {camCommitted _camera};
 _camera cameraEffect ["terminate","back"];
 camDestroy _camera;
 waitUntil {scriptDone _handle};
-sd_firstSpawn = true;
