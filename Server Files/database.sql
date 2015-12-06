@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `players` (
 --
 
 CREATE TABLE IF NOT EXISTS `loadouts` (
-  `id` int(12) NOT NULL,
+  `id` int(12) NOT NULL AUTO_INCREMENT,
   `name` varchar(32) NOT NULL,
   `playerid` varchar(50) NOT NULL,
   `active` varchar(32) NOT NULL,
