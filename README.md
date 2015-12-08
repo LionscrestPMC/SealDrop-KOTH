@@ -1,4 +1,4 @@
-<h1 align="center">SealDrop KOTH</h1>
+<h1 align="center">SealDrop King of the Hill (KotH)</h1>
 <p align="center">
     <a href="https://github.com/DeadP4xel/SealDrop-KOTH/wiki/Changelog">
     <img src="http://storage.sealdrop.de/koth/koth_icon_version.png" alt="Changelog" />
