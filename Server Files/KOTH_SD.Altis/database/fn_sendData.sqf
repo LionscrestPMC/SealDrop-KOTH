@@ -16,8 +16,8 @@ _side 		= side _player;
 _uid 		= getPlayerUID _player;
 
 // PLAYER SCREEN
-cutText[format[localize "STR_Script_GINFO",profileName],"BLACK FADED"];
+0 cutText[format[localize "STR_Script_GINFO",profileName],"BLACK FADED"];
 0 cutFadeOut 9999999;
 
 // SEND DATA TO SERVER
-[[_uid,_side,_player],"DB_fnc_getData",false,false] call BIS_fnc_MP;
+[[_uid,_side,_player],"DB_fnc_getData",false,false] spawn BIS_fnc_MP;

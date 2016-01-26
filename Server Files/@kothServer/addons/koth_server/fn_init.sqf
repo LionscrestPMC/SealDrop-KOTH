@@ -31,7 +31,8 @@ publicVariable "sd_server_isReady";
 [] spawn SCRIPTS_fnc_functions;
 [] spawn SCRIPTS_fnc_killCounter;
 [] spawn SCRIPTS_fnc_killSystem;
-[] call SCRIPTS_fnc_setTimeGlobal;
+[] spawn SCRIPTS_fnc_setTimeGlobal;
+//[] spawn SCRIPTS_fnc_fightzone; // TEMP DISABLE! SCRIPT NOT FINISHED
 
 // DATABASE INIT
 if(isNil {uiNamespace getVariable "sd_sql_id"}) then {
@@ -78,7 +79,7 @@ if(isNil {uiNamespace getVariable "sd_sql_id"}) then {
 		"extDB2" callExtension "9:START_RCON:RCON";
 		"extDB2" callExtension format["9:ADD_PROTOCOL:RCON:%1",(call RCON_ID)];
 		_rconStatus = "extDB2" callExtension "9:RCON_STATUS";
-		if(_rconStatus isEqualTo "[1]") then { 
+		if(_rconStatus isEqualTo "[1]") then {
 			diag_log "EXTDB:: RCON IS ENABLED";
 		} else {
 			diag_log "EXTDB:: RCON DISABLED";

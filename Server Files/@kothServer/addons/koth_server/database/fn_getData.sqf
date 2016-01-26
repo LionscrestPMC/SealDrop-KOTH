@@ -21,10 +21,10 @@ _query = switch(_side) do {
 	case west: {
 		format ["SELECT playerid, name, side, level, kills, banned, teamkills, xp, deaths FROM players WHERE playerid='%1'",_uid];
 	};
-	case opfor: {	
+	case opfor: {
 		format ["SELECT playerid, name, side, level, kills, banned, teamkills, xp, deaths FROM players WHERE playerid='%1'",_uid];
 	};
-	case independent: {		
+	case independent: {
 		format ["SELECT playerid, name, side, level, kills, banned, teamkills, xp, deaths FROM players WHERE playerid='%1'",_uid];
 	};
 };
@@ -33,8 +33,8 @@ _query = switch(_side) do {
 _result = [_query,2] call DB_fnc_queryHandler;
 
 // REQUEST GET => WORK WITH THE DATA AND SELECT
-if(typeName _result isEqualTo "STRING") exitWith {[[],"BASIS_fnc_sendNewData",_ownerID,false,true] spawn BIS_fnc_MP;};
-if(count _result isEqualTo 0) exitWith {[[],"BASIS_fnc_sendNewData",_ownerID,false,true] spawn BIS_fnc_MP;};
+if(typeName _result isEqualTo "STRING") exitWith {[[],"BASIS_fnc_sendNewData",_ownerID,false,true] spawn BIS_fnc_MP};
+if(count _result isEqualTo 0) exitWith {[[],"BASIS_fnc_sendNewData",_ownerID,false,true] spawn BIS_fnc_MP};
 
 // SELECT DATA AND SEND TO CLIENT
 private["_temp"];

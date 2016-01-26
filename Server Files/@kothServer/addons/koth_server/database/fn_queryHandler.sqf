@@ -42,11 +42,10 @@ while{_loop} do {
 
 // DATA CONVERTED FROM QUERY REQUEST
 _result = call compile _result;
-if(count (_result select 1) == 0) exitWith {[]};
-_return = ((_result select 1) select 0);
-if(!(_return isEqualTo [])) then {
-	_return;
-} else {
-	_return = "";
-	_return;
+if(count (_result select 1) isEqualTo 0) exitWith {[]};
+_return = _result select 1;
+if(!_multiarr && (count _return) > 0) then {
+	_return = _return select 0;
 };
+
+_return;

@@ -1,7 +1,6 @@
 /*
 	Author: DeadP4xel
 */
-class DefaultEventhandlers;
 class CfgPatches
 {
 	class koth_server
@@ -25,6 +24,14 @@ class CfgServerSettings
 
 class CfgFunctions
 {
+	class KOTH_SERVER
+	{
+		class BOOT
+		{
+			file = "\koth_server";
+			class init {preInit=1;};
+		};
+	};
 	class SQL
 	{
 	  tag = "DB";
@@ -60,6 +67,7 @@ class CfgFunctions
 			class functions {};
 			class killSystem {};
 			class setTimeGlobal {};
+			class fightzone {};
 		};
 	};
 

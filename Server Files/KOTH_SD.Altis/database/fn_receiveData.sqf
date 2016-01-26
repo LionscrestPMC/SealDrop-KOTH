@@ -6,9 +6,6 @@
 	Receive the data from the server
 */
 
-// ERROR CHECK
-if(sd_clientLoad) exitWith {};
-
 // ERROR CHECKS
 if(isNil "_this") exitWith {[] call BASIS_fnc_sendNewData};
 if(typeName _this isEqualTo "STRING") exitWith {[] call BASIS_fnc_sendNewData};
