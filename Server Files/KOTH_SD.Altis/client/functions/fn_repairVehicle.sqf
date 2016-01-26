@@ -1,5 +1,5 @@
 /*
-	File: fn_repairVehicle.sqf 
+	File: fn_repairVehicle.sqf
 	Author: DeadP4xel
 
 	Description:
@@ -7,17 +7,17 @@
 */
 private["_vehicle","_progress"];
 
-// VARIABLES 
+// VARIABLES
 _vehicle = cursorTarget;
 
-// ERROR CHECKS 
+// ERROR CHECKS
 if((damage _vehicle) >= 1) exitWith {hintSilent "This vehicle is destroyed! You can't repair it anymore"};
 if(isNull _vehicle) exitWith {};
 if(!alive player OR isNull player) exitWith {};
 if(vehicle player != player) exitWith {hintSilent "You can't repair a vehicle while stay in a vehicle."};
 
 
-if((_vehicle isKindOf "Car") OR (_vehicle isKindOf "Ship") OR (_vehicle isKindOf "Air")) then 
+if((_vehicle isKindOf "Car") OR (_vehicle isKindOf "Ship") OR (_vehicle isKindOf "Air")) then
 {
 	if("ToolKit" in (items player)) then {
 		_vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");

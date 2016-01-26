@@ -384,7 +384,6 @@ switch(_controller) do
 						["O_Heli_Attack_02_F",nil,40],
 						["O_Heli_Attack_02_black_F",nil,41],
 						["B_Heli_Attack_01_F",nil,47],
-						["O_Heli_Light_02_F",nil,15],
 						["I_Heli_light_03_F",nil,10],
 						["C_Heli_light_01_blue_F",nil,10],
 						["B_Heli_Light_01_armed_F",nil,29],

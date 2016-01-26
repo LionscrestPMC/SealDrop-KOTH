@@ -66,7 +66,7 @@ disableSerialization;
 	{
 		_countWestTrigger = (playersNumber west);
 		waitUntil {(playersNumber west) != _countWestTrigger};
-		[] call sd_fnc_hudConfig; 
+		[] call sd_fnc_hudConfig;
 	};
 };
 [] spawn
@@ -76,7 +76,7 @@ disableSerialization;
 	{
 		_countOpforTrigger = (playersNumber opfor);
 		waitUntil {(playersNumber opfor) != _countOpforTrigger};
-		[] call sd_fnc_hudConfig; 
+		[] call sd_fnc_hudConfig;
 	};
 };
 [] spawn
@@ -86,7 +86,7 @@ disableSerialization;
 	{
 		_countIndepTrigger = (playersNumber independent);
 		waitUntil {(playersNumber independent) != _countIndepTrigger};
-		[] call sd_fnc_hudConfig; 
+		[] call sd_fnc_hudConfig;
 	};
 };
 [] spawn
@@ -96,7 +96,7 @@ disableSerialization;
 	{
 		_countWestKillsGlobal = sd_westCounterToClients;
 		waitUntil {sd_westCounterToClients != _countWestKillsGlobal};
-		[] call sd_fnc_hudConfig; 
+		[] call sd_fnc_hudConfig;
 	};
 };
 [] spawn
@@ -106,7 +106,7 @@ disableSerialization;
 	{
 		_countOpforKillsGlobal = sd_eastCounterToClients;
 		waitUntil {sd_eastCounterToClients != _countOpforKillsGlobal};
-		[] call sd_fnc_hudConfig; 
+		[] call sd_fnc_hudConfig;
 	};
 };
 [] spawn
@@ -116,6 +116,6 @@ disableSerialization;
 	{
 		_countIndepKillsGlobal = sd_independentCounterToClients;
 		waitUntil {sd_independentCounterToClients != _countIndepKillsGlobal};
-		[] call sd_fnc_hudConfig; 
+		[] call sd_fnc_hudConfig;
 	};
 };

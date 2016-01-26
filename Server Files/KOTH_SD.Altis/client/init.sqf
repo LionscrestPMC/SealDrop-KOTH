@@ -93,6 +93,8 @@ if(call sd_autoSaveMaster) then {
 waitUntil{!isNil "sd_server_isReady"};
 [] call BASIS_fnc_sendData;
 waitUntil {sd_clientLoad};
+0 cutText["KOTH CLIENT FINISHED","BLACK FADED"];
+0 cutFadeOut 9999999;
 
 if(call sd_loadoutMaster) then {
     [] call LOUT_fnc_loadoutSendRequest;

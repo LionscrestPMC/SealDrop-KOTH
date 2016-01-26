@@ -72,9 +72,9 @@ if(sd_deaths isEqualTo 0 OR sd_kills isEqualTo 0) then {
 	_kdRatioText ctrlSetText "0";
 } else {
 	_kdBarPercent = ((sd_kills / sd_deaths) * 100);
-	if(_kdBarPercent <= 100 && _kdBarPercent > 1) then [{_kdBarPercent = (_kdBarPercent / 100)},{if(_kdBarPercent <= 1)then{_kdBarPercent = _kdBarPercent}}]; 
+	if(_kdBarPercent <= 100 && _kdBarPercent > 1) then [{_kdBarPercent = (_kdBarPercent / 100)},{if(_kdBarPercent <= 1)then{_kdBarPercent = _kdBarPercent}}];
 	_kdBar progressSetPosition _kdBarPercent;
-	_kdRatioText ctrlSetText format["%1",(round((sd_kills / sd_deaths) * (10 ^ 2)) / (10 ^ 2))]; 
+	_kdRatioText ctrlSetText format["%1",(round((sd_kills / sd_deaths) * (10 ^ 2)) / (10 ^ 2))];
 };
 
 // OTHER STUFF
