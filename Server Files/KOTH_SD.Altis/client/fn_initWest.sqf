@@ -49,3 +49,6 @@ if(sd_spawned) then {
 };
 
 [] call sd_fnc_hudCreate;
+
+//Dynamic Groups - Bohemia Interactive
+["Initialize"] call BIS_fnc_dynamicGroups;

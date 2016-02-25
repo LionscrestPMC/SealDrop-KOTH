@@ -49,3 +49,6 @@ if(sd_spawned) then {
 	diag_log format["SD_CLIENT:: PLAYER %1 (UID: %2) SPAWNED AS %3 ON GRID: %4 (POSITION: %5)",profileName,getPlayerUID player,side player,mapGridPosition player,getPos player];
 };
 [] call sd_fnc_hudCreate;
+
+//Dynamic Groups - Bohemia Interactive
+["Initialize"] call BIS_fnc_dynamicGroups;
